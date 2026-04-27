@@ -1,0 +1,61 @@
+{
+  "started_at": "2026-04-26T08:04:30.838552+00:00",
+  "config": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\configs\\multi_model_r2r_seed42.json",
+  "output_root": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_codegemma",
+  "gold_path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\data\\processed\\crn_pilot100.jsonl",
+  "prompt_dir": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\prompts\\crn_pilot100",
+  "models": [
+    "codegemma:7b"
+  ],
+  "conditions": [
+    "no_review",
+    "direct",
+    "gold_location"
+  ],
+  "limit": 10,
+  "backend": "ollama",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "temperature": 0.0,
+  "seed": 42,
+  "num_predict": 512,
+  "bootstrap_iters": 1000,
+  "dry_run": false,
+  "resume": true,
+  "completed_at": "2026-04-26T09:04:55.414128+00:00",
+  "generation_runs": [
+    {
+      "model": "codegemma:7b",
+      "condition": "no_review",
+      "path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_codegemma\\generations\\codegemma-7b\\no_review.jsonl",
+      "selected_examples": 10,
+      "existing_rows_reused": 10,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "codegemma:7b",
+      "condition": "direct",
+      "path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_codegemma\\generations\\codegemma-7b\\direct.jsonl",
+      "selected_examples": 10,
+      "existing_rows_reused": 9,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 1,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "codegemma:7b",
+      "condition": "gold_location",
+      "path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_codegemma\\generations\\codegemma-7b\\gold_location.jsonl",
+      "selected_examples": 10,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 10,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    }
+  ],
+  "combined_generations": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_codegemma\\generations\\all_generations.jsonl"
+}

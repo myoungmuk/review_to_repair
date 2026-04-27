@@ -1,0 +1,8 @@
+{
+  "benchmark": "CodeReview-New",
+  "subset_size": 100,
+  "seed": 42,
+  "baselines": ["no_review", "direct", "gold_location"],
+  "metrics": ["exact_match", "exact_match_trim", "exact_match_line_trim", "location_overlap_f1"],
+  "notes": "Hunk-level pilot. Gold-location marks lines/spans in the old snippet that differ from the gold revised snippet."
+}

@@ -1,0 +1,138 @@
+$ C:\Users\myoun\AppData\Local\Programs\Python\Python313\python.exe scripts/run_local_predictions.py --input C:\Users\myoun\Desktop\review_to_repair_crn\prompts\crn_pilot30_head42\no_review_prompts.jsonl --output C:\Users\myoun\Desktop\review_to_repair_crn\predictions\crn_pilot30_head42_qwen25coder7b_no_review.jsonl --model qwen2.5-coder:7b --backend ollama --temperature 0.0 --seed 42 --timeout-seconds 900.0 --resume --continue-on-error --error-log C:\Users\myoun\Desktop\review_to_repair_crn\reports\crn_pilot30_head42_qwen25coder7b\no_review_errors.jsonl
+{
+  "input": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\prompts\\crn_pilot30_head42\\no_review_prompts.jsonl",
+  "output": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\predictions\\crn_pilot30_head42_qwen25coder7b_no_review.jsonl",
+  "model": "qwen2.5-coder:7b",
+  "backend": "ollama",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "processed": 0,
+  "resume": true,
+  "dry_run": false
+}
+$ C:\Users\myoun\AppData\Local\Programs\Python\Python313\python.exe scripts/run_local_predictions.py --input C:\Users\myoun\Desktop\review_to_repair_crn\prompts\crn_pilot30_head42\direct_prompts.jsonl --output C:\Users\myoun\Desktop\review_to_repair_crn\predictions\crn_pilot30_head42_qwen25coder7b_direct.jsonl --model qwen2.5-coder:7b --backend ollama --temperature 0.0 --seed 42 --timeout-seconds 900.0 --resume --continue-on-error --error-log C:\Users\myoun\Desktop\review_to_repair_crn\reports\crn_pilot30_head42_qwen25coder7b\direct_errors.jsonl
+{
+  "input": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\prompts\\crn_pilot30_head42\\direct_prompts.jsonl",
+  "output": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\predictions\\crn_pilot30_head42_qwen25coder7b_direct.jsonl",
+  "model": "qwen2.5-coder:7b",
+  "backend": "ollama",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "processed": 30,
+  "resume": true,
+  "dry_run": false
+}
+[1/30] wrote crn-005287 baseline=direct
+[2/30] wrote crn-011737 baseline=direct
+[3/30] wrote crn-002932 baseline=direct
+[4/30] wrote crn-002192 baseline=direct
+[5/30] wrote crn-006232 baseline=direct
+[6/30] wrote crn-011391 baseline=direct
+[7/30] wrote crn-002686 baseline=direct
+[8/30] wrote crn-004518 baseline=direct
+[9/30] wrote crn-003358 baseline=direct
+[10/30] wrote crn-008823 baseline=direct
+[11/30] wrote crn-006784 baseline=direct
+[12/30] wrote crn-013905 baseline=direct
+[13/30] wrote crn-002938 baseline=direct
+[14/30] wrote crn-000862 baseline=direct
+[15/30] wrote crn-006421 baseline=direct
+[16/30] wrote crn-000801 baseline=direct
+[17/30] wrote crn-009395 baseline=direct
+[18/30] wrote crn-004543 baseline=direct
+[19/30] wrote crn-006291 baseline=direct
+[20/30] wrote crn-000798 baseline=direct
+[21/30] wrote crn-011089 baseline=direct
+[22/30] wrote crn-000744 baseline=direct
+[23/30] wrote crn-001241 baseline=direct
+[24/30] wrote crn-009360 baseline=direct
+[25/30] wrote crn-005359 baseline=direct
+[26/30] wrote crn-002326 baseline=direct
+[27/30] wrote crn-006510 baseline=direct
+[28/30] wrote crn-005332 baseline=direct
+[29/30] wrote crn-009549 baseline=direct
+[30/30] wrote crn-009507 baseline=direct
+$ C:\Users\myoun\AppData\Local\Programs\Python\Python313\python.exe scripts/run_local_predictions.py --input C:\Users\myoun\Desktop\review_to_repair_crn\prompts\crn_pilot30_head42\no_review_prompts.jsonl --output C:\Users\myoun\Desktop\review_to_repair_crn\predictions\crn_pilot30_head42_qwen25coder7b_no_review.jsonl --model qwen2.5-coder:7b --backend ollama --temperature 0.0 --seed 42 --timeout-seconds 900.0 --resume --continue-on-error --error-log C:\Users\myoun\Desktop\review_to_repair_crn\reports\crn_pilot30_head42_qwen25coder7b\no_review_errors.jsonl
+{
+  "input": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\prompts\\crn_pilot30_head42\\no_review_prompts.jsonl",
+  "output": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\predictions\\crn_pilot30_head42_qwen25coder7b_no_review.jsonl",
+  "model": "qwen2.5-coder:7b",
+  "backend": "ollama",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "processed": 0,
+  "resume": true,
+  "dry_run": false
+}
+$ C:\Users\myoun\AppData\Local\Programs\Python\Python313\python.exe scripts/run_local_predictions.py --input C:\Users\myoun\Desktop\review_to_repair_crn\prompts\crn_pilot30_head42\direct_prompts.jsonl --output C:\Users\myoun\Desktop\review_to_repair_crn\predictions\crn_pilot30_head42_qwen25coder7b_direct.jsonl --model qwen2.5-coder:7b --backend ollama --temperature 0.0 --seed 42 --timeout-seconds 900.0 --resume --continue-on-error --error-log C:\Users\myoun\Desktop\review_to_repair_crn\reports\crn_pilot30_head42_qwen25coder7b\direct_errors.jsonl
+{
+  "input": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\prompts\\crn_pilot30_head42\\direct_prompts.jsonl",
+  "output": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\predictions\\crn_pilot30_head42_qwen25coder7b_direct.jsonl",
+  "model": "qwen2.5-coder:7b",
+  "backend": "ollama",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "processed": 0,
+  "resume": true,
+  "dry_run": false
+}
+$ C:\Users\myoun\AppData\Local\Programs\Python\Python313\python.exe scripts/run_local_predictions.py --input C:\Users\myoun\Desktop\review_to_repair_crn\prompts\crn_pilot30_head42\gold_location_prompts.jsonl --output C:\Users\myoun\Desktop\review_to_repair_crn\predictions\crn_pilot30_head42_qwen25coder7b_gold_location.jsonl --model qwen2.5-coder:7b --backend ollama --temperature 0.0 --seed 42 --timeout-seconds 900.0 --resume --continue-on-error --error-log C:\Users\myoun\Desktop\review_to_repair_crn\reports\crn_pilot30_head42_qwen25coder7b\gold_location_errors.jsonl
+{
+  "input": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\prompts\\crn_pilot30_head42\\gold_location_prompts.jsonl",
+  "output": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\predictions\\crn_pilot30_head42_qwen25coder7b_gold_location.jsonl",
+  "model": "qwen2.5-coder:7b",
+  "backend": "ollama",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "processed": 0,
+  "resume": true,
+  "dry_run": false
+}
+$ C:\Users\myoun\AppData\Local\Programs\Python\Python313\python.exe scripts/evaluate_predictions.py --gold C:\Users\myoun\Desktop\review_to_repair_crn\data\processed\crn_pilot30_head42.jsonl --pred C:\Users\myoun\Desktop\review_to_repair_crn\predictions\crn_pilot30_head42_qwen25coder7b.jsonl --outdir C:\Users\myoun\Desktop\review_to_repair_crn\reports\crn_pilot30_head42_qwen25coder7b
+{
+  "summary": [
+    {
+      "baseline": "direct",
+      "n": 30,
+      "exact_match": 0.1,
+      "exact_match_pct": 10.0,
+      "exact_match_trim": 0.1,
+      "exact_match_trim_pct": 10.0,
+      "exact_match_line_trim": 0.1,
+      "exact_match_line_trim_pct": 10.0,
+      "location_overlap_f1": 0.5887850918145036,
+      "location_overlap_f1_pct": 58.878509181450355
+    },
+    {
+      "baseline": "gold_location",
+      "n": 30,
+      "exact_match": 0.03333333333333333,
+      "exact_match_pct": 3.3333333333333335,
+      "exact_match_trim": 0.03333333333333333,
+      "exact_match_trim_pct": 3.3333333333333335,
+      "exact_match_line_trim": 0.03333333333333333,
+      "exact_match_line_trim_pct": 3.3333333333333335,
+      "location_overlap_f1": 0.8050770333515431,
+      "location_overlap_f1_pct": 80.50770333515432
+    },
+    {
+      "baseline": "no_review",
+      "n": 30,
+      "exact_match": 0.0,
+      "exact_match_pct": 0.0,
+      "exact_match_trim": 0.0,
+      "exact_match_trim_pct": 0.0,
+      "exact_match_line_trim": 0.0,
+      "exact_match_line_trim_pct": 0.0,
+      "location_overlap_f1": 0.5594682115270351,
+      "location_overlap_f1_pct": 55.94682115270351
+    }
+  ],
+  "missing": 0,
+  "outdir": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\reports\\crn_pilot30_head42_qwen25coder7b"
+}
+$ C:\Users\myoun\AppData\Local\Programs\Python\Python313\python.exe scripts/bootstrap_gain.py --per-example C:\Users\myoun\Desktop\review_to_repair_crn\reports\crn_pilot30_head42_qwen25coder7b\per_example_metrics.csv --baseline-a no_review --baseline-b direct --metric exact_match_line_trim --iters 1000 --seed 42
+{'paired_n': 30, 'gain': 0.1, 'gain_pct': 10.0, 'ci95_low': 0.0, 'ci95_high': 0.2, 'metric': 'exact_match_line_trim', 'baseline_b_minus_a': 'direct - no_review'}
+$ C:\Users\myoun\AppData\Local\Programs\Python\Python313\python.exe scripts/bootstrap_gain.py --per-example C:\Users\myoun\Desktop\review_to_repair_crn\reports\crn_pilot30_head42_qwen25coder7b\per_example_metrics.csv --baseline-a direct --baseline-b gold_location --metric exact_match_line_trim --iters 1000 --seed 42
+{'paired_n': 30, 'gain': -0.06666666666666667, 'gain_pct': -6.666666666666667, 'ci95_low': -0.16666666666666666, 'ci95_high': 0.0, 'metric': 'exact_match_line_trim', 'baseline_b_minus_a': 'gold_location - direct'}
+$ C:\Users\myoun\AppData\Local\Programs\Python\Python313\python.exe scripts/bootstrap_gain.py --per-example C:\Users\myoun\Desktop\review_to_repair_crn\reports\crn_pilot30_head42_qwen25coder7b\per_example_metrics.csv --baseline-a no_review --baseline-b direct --metric location_overlap_f1 --iters 1000 --seed 42
+{'paired_n': 30, 'gain': 0.029316880287468528, 'gain_pct': 2.9316880287468527, 'ci95_low': -0.08504468989616049, 'ci95_high': 0.13625668343094813, 'metric': 'location_overlap_f1', 'baseline_b_minus_a': 'direct - no_review'}
+$ C:\Users\myoun\AppData\Local\Programs\Python\Python313\python.exe scripts/bootstrap_gain.py --per-example C:\Users\myoun\Desktop\review_to_repair_crn\reports\crn_pilot30_head42_qwen25coder7b\per_example_metrics.csv --baseline-a direct --baseline-b gold_location --metric location_overlap_f1 --iters 1000 --seed 42
+{'paired_n': 30, 'gain': 0.21629194153703957, 'gain_pct': 21.629194153703956, 'ci95_low': 0.08901133611305181, 'ci95_high': 0.3528938630360199, 'metric': 'location_overlap_f1', 'baseline_b_minus_a': 'gold_location - direct'}
+$ C:\Users\myoun\AppData\Local\Programs\Python\Python313\python.exe scripts/make_error_analysis_sample.py --per-example C:\Users\myoun\Desktop\review_to_repair_crn\reports\crn_pilot30_head42_qwen25coder7b\per_example_metrics.csv --gold C:\Users\myoun\Desktop\review_to_repair_crn\data\processed\crn_pilot30_head42.jsonl --pred C:\Users\myoun\Desktop\review_to_repair_crn\predictions\crn_pilot30_head42_qwen25coder7b.jsonl --output C:\Users\myoun\Desktop\review_to_repair_crn\reports\crn_pilot30_head42_qwen25coder7b\error_analysis_sample.csv --max-per-group 10 --seed 42
+{'output': 'C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\reports\\crn_pilot30_head42_qwen25coder7b\\error_analysis_sample.csv', 'rows': 11, 'counts': {'direct_fail_gold_location_success': 0, 'direct_fail_gold_location_fail': 10, 'direct_success_gold_location_success': 1}}

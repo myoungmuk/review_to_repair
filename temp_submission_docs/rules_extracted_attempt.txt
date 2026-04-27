@@ -1,0 +1,97 @@
+===== PAGEOBJ 10 =====
+7. (1) 논문의 구성은 국문 제목, 영문 제목, 국문 요약, 국문 키워드, 영문 요약, 영문 키워드, 본문, 참고
+   게재용 논문은 워드프로세서 “아래한글”, “MS워드”를 사용하여 작성한 화일을 제출한다.
+6. 심사용 논문은 pdf 형태로 제출하되 다른 형태의 파일인 경우는 1회 변환시 변환료 10,000원이 부과된다.
+   (2) 논문 접수는 수시로 하며 접수일은 논문이 본회 사무국에서 확인된 날로 한다. 
+5. (1) 논문은 본회 홈페이지를 통하여 투고하여야 한다.
+ 등의 논문Computing Practices)
+ 등을 위주로 한 실제적인 경험, 산업체의 경험, 전문적인 교육 경험   (KIISE Transactions on 
+․ 컴퓨팅의 실제 : 컴퓨터 시스템의 구현․ 개발 사례․ 사용 분석․ 도구    정보과학회 컴퓨팅의 실제 논문지
+            멀티미디어 통신, 센서 네트워크 등 정보통신 분야  
+․ 정보통신 : 유무선 네트워크, 이동통신, 인터넷 통신 및 응용, 정보보안, 
+                XML, 지리정보시스템 등 데이타베이스 분야 
+(Journal of KIISE)
+․ 데이타베이스 : DBMS, 정보시스템 관리, 데이타마이닝, 정보검색, 
+정보과학회논문지
+                      컴퓨터교육 분야 
+․ 소프트웨어 및 응용 : 소프트웨어공학, 인공지능, HCI, PL, 자연어처리,  
+․ 시스템 및 이론 : 하드웨어, OS, 그래픽스, 병렬처리, 컴퓨터 이론 분야  
+논문분야게재 논문지
+고 논문분야를 변경할 수 있다. 
+투고 논문분야가 포함된 논문지로 게재된다. 논문의 성격이나 분야가 부적합한 경우, 편집위원회에서 투
+4. 투고자는 논문의 성격 및 분야에 따라 해당되는 논문분야로 투고하여야 하며, 심사가 완료된 후에는 
+3. 게재 논문의 내용에 대한 최종 책임은 저자가 진다. 
+단편논문은 3주, 2개월보장긴급논문은 2주가 지나도록 저자의 회신이 없으면 포기하는 것으로 간주한다. 
+2. 논문지 편집위원회는 저자에게 투고 논문의 수정을 요구할 수 있다. 수정 요구후 일반논문 6주, 초청논문․
+윤리)을 숙지하고 동의하는 것으로 간주한다.
+할 수 없다. 또한, 투고자는 연구 및 출판윤리에 대한 기준(한국정보과학회 논문윤리 규정, 국제표준출판
+창성이 인정되는 것이어야 하며, 국내외 타 학술지에 투고하여 심사 중이거나 게재되었던 논문은 투고
+1. 투고 논문은 정보과학 및 그 응용에 관련되는 것으로서, 학술 및 산업발전에 기여하는 내용이거나 독
+33차 개정 : 2024년 6월 27일
+32차 개정 : 2022년 5월 27일
+31차 개정 : 2014년  7월 1일
+30차 개정 : 2012년 12월 1일
+(중간 개정 이력 생략)
+1974년 5월 1일 제정
+논문지 투고규정
+===== PAGEOBJ 20 =====
+은 하단 중앙에, 표의 경우는 상단 중앙에 각각 그림 1(Fig. 1) 및 표 1(Table 1)로 표기한다. 본문에 삽
+10. 그림, 표는 인쇄될 크기의 두 배 정도로 선명하게 작성하여 본문 중에 위치를 정하고, 그림의 명칭
+9. 장 및 절에 해당되는 번호는 아라비아 숫자로 각각 1., 1.1 등과 같이 표기한다.
+2012, Sep. 10)
+[1] J. Jones. (1991, May 10). Networks (2nd ed.) [Online]. Available: http://www.atm.com (downloaded 
+<Web Site>
+Korean)
+Services on Smart Homes,” Proc. of the 35th KIISE Fall Conference, pp. 291-358, 2008. (in 
+[2] K. J. Kang, S. J. Kim, “A Design of Probability-based Knowledge Model for Environment Control 
+of the KIISE Korea Computer Congress 2008, pp. 354-358, 2008. (in Korean) 
+[1] S. Yu, S. J. Kim, "A Design of a Context-Aware Fault Recovery System for Smart Homes," Proc. 
+<학술대회 발표 논문집>
+Engineering, Vol. 2, No. 1, pp. 26-43, Mar. 2008. 
+Augmented Terms in an Extended Boolean Model," Journal of Computing Science and 
+[6] T.-Q. Nguyen, J.-S. Heo, J.-H. Lee, Y.-R. Kim, and K.-Y. Whang, "Query Expansion Using 
+Journal of KIISE : Information Networking, Vol. 35, No. 2, pp. 120-129, Oct. 2008. (in Korean)
+[5] J. Choe and D. Yoo, “A Mechanism for Handling Selfish Nodes using Credit in Sensor Networks,” 
+KIISE : Databases, Vol. 35, No. 6, pp. 495-504, Dec. 2008. (in Korean)
+[4] J. Kim, I. Song, and M.-H. Kim, “An Efficient Keyword Search Method on RDF Data,” Journal of 
+15, No. 4, pp. 275-279, Apr. 2009. (in Korean)
+Method in Wireless Sensor Networks,” Journal of KIISE : Computing Practices and Letters, Vol. 
+[3] D. O. Seong, M. H. Yeo, and J. S. Yoo, “An Energy Efficient Continuous Skyline Query Processing 
+554-561, Oct. 2008. (in Korean)
+Goal-Oriented Dialogue,” Journal of KIISE : Software and Applications, Vol. 35, No. 9, pp. 
+[2] D. Kim, H. Kim, and J. Seo, “A Statistical Prediction Model of Speakers' Intentions in a 
+No. 10, pp. 511-520, Oct. 2007. (in Korean)
+in Decay Usage Algorithm of UNIX,” Journal of KIISE : Computer Systems and Theory, Vol. 34, 
+[1] K. Park, H. Hwang, C. Lee, and S. Min, “Analysis of Delay-Bandwidth Normalization Characteristic 
+<논문지>
+  [1] R. Bellman, Introduction to Matrix Analysis, 2nd Ed., pp. 234, McGraw-Hill, New York, 1979. 
+<단행본>
+술한다.
+제목, 학술지명, 권, 호, 쪽수, 발행년도의 순으로, 단행본은 저자, 도서명, 발행소, 발행년도의 순으로 기
+헌을 참고문헌란에 인용 순서대로 기술한다. 참고문헌은 영문으로만 표기하며 학술지의 경우에는 저자, 
+8. 논문 내용에 직접 관련이 있는 문헌에 대해서는 관련이 있는 본문 중에 참고문헌 번호를 쓰고 그 문
+  (4) 심사용 논문에는 감사의 글을 기재하지 않는다. 
+   (3) 단편논문은 출판 논문지의 편집형식을 기준으로 게재면수 5면 이내로 작성하여야 한다.
+드는 4~6개로 작성한다.
+   (2) 국문 요약은 300~500의 글자 수로, 영문 요약은 100~200의 단어 수로 작성한다. 또한 국문, 영문 키워
+문헌, 부록 순으로 작성하며, 저자에 관한 사항은 일체 표기하지 않는다. 
+===== PAGEOBJ 24 =====
+16. 본 규정은 2024년 6월 27일부터 효력을 발생한다.
+하며, 게재되는 논문의 저자는 논문 저작권 위임서를 제출한다.
+15. 논문지에 게재된 논문은 데이터베이스화하여 이를 불특정 다수에게 공개함에 동의하는 것으로 간주
+14. 논문지에 게재된 논문은 본 학회의 승인없이 무단 복제할 수 없다.
+얻어 게재할 수 있다. 단, 저자는 게재 시기 조정에 따른 경비 300,000원을 추가로 부담하여야 한다.
+13. 채택된 논문 중 특별한 사정으로 게재 시기 조정을 원하는 경우에는 논문지 편집위원회의 승인을 
+할인한다.   
+포함시에는 100,000원을 추가 부담하며, 연구비 지원 문구가 포함되지 않는 경우에는 상기 게재료의 20%를 
+  단, 게재시 저자 중에 비회원이 포함된 경우에는 상기 게재료의 50%를 추가 부담하고, 연구비 지원 문구 
+단편논문게재료100,000원/편
+논문게재료15,000원/쪽30,000원/쪽50,000원/쪽
+인쇄 쪽수1-6쪽 7-8쪽9쪽 이상
+(단, 저자가 지연하는 경우는 제외함). 채택된 논문의 투고자는 인쇄 쪽수에 따라 다음의 게재료를 부담한다. 
+투고시 납부해야 하며, 2개월보장긴급논문의 경우 2개월내에 심사가 완료되지 않으면 심사료를 환불한다
+12. 투고자는 2개월보장긴급논문 1편당 심사료 500,000원을, 그 외의 논문은 1편당 심사료 50,000원을 논문 
+한다. 
+11. 채택된 투고자는 약력을 서술식으로 200자 이내로 작성하여 반명함판 사진 화일과 함께 제출하여야 
+다.
+입되는 그림 및 표의 내용은 모두 영문으로 작성하고, 그림과 표의 제목은 한글과 영어로 모두 표기한

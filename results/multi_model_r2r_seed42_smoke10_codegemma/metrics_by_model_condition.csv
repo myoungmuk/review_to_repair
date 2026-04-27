@@ -1,0 +1,4 @@
+model,condition,n_expected,n_output,n_valid,exact_match_line_trim,location_overlap_f1,exact_match_line_trim_pct,location_overlap_f1_pct
+codegemma:7b,no_review,10,10,10,0.0,0.7829790209790211,0.0,78.29790209790211
+codegemma:7b,direct,10,10,10,0.1,0.6414035087719299,10.0,64.14035087719299
+codegemma:7b,gold_location,10,10,10,0.0,0.8670445344129554,0.0,86.70445344129554

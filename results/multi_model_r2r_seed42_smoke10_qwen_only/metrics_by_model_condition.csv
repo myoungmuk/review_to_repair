@@ -1,0 +1,4 @@
+model,condition,n_expected,n_output,n_valid,exact_match_line_trim,location_overlap_f1,exact_match_line_trim_pct,location_overlap_f1_pct
+qwen2.5-coder:7b,no_review,10,10,10,0.0,0.4602828282828283,0.0,46.028282828282826
+qwen2.5-coder:7b,direct,10,10,10,0.1,0.5393939393939393,10.0,53.93939393939393
+qwen2.5-coder:7b,gold_location,10,10,10,0.0,0.9133333333333333,0.0,91.33333333333333

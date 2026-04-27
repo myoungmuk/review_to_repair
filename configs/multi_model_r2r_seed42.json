@@ -1,0 +1,62 @@
+{
+  "run_name": "multi_model_r2r_seed42",
+  "benchmark": "CodeReview-New",
+  "gold_path": "data/processed/crn_pilot100.jsonl",
+  "prompt_dir": "prompts/crn_pilot100",
+  "subset_size": 100,
+  "seed": 42,
+  "conditions": ["no_review", "direct", "gold_location"],
+  "metrics": ["exact_match_line_trim", "location_overlap_f1"],
+  "backend": "ollama",
+  "temperature": 0.0,
+  "bootstrap_iters": 1000,
+  "reuse_existing_predictions": false,
+  "default_model_selection": [
+    {
+      "label": "current_qwen",
+      "required": true,
+      "candidates": ["qwen2.5-coder:7b"],
+      "install_hint": "ollama pull qwen2.5-coder:7b"
+    },
+    {
+      "label": "deepseek_coder_6_7b_or_7b",
+      "required": true,
+      "candidates": ["deepseek-coder:6.7b", "deepseek-coder:7b"],
+      "install_hint": "ollama pull deepseek-coder:6.7b"
+    },
+    {
+      "label": "codegemma_7b",
+      "required": true,
+      "candidates": ["codegemma:7b"],
+      "install_hint": "ollama pull codegemma:7b"
+    }
+  ],
+  "fallback_candidates_not_for_main_full_run": [
+    {
+      "label": "fallback_if_codegemma_unavailable",
+      "candidates": ["qwen2.5-coder:3b"],
+      "note": "Installed fallback candidate only. Do not use in the main full run unless explicitly approved."
+    }
+  ],
+  "excluded_models": {
+    "starcoder2:7b": "excluded due to empty outputs under current Ollama chat backend"
+  },
+  "existing_predictions": {
+    "qwen2.5-coder:7b": {
+      "no_review": "predictions/crn_pilot100_qwen25coder7b_no_review.jsonl",
+      "direct": "predictions/crn_pilot100_qwen25coder7b_direct.jsonl",
+      "gold_location": "predictions/crn_pilot100_qwen25coder7b_gold_location.jsonl"
+    },
+    "qwen2.5-coder:3b": {
+      "no_review": "predictions/crn_pilot100_qwen25coder3b_no_review.jsonl",
+      "direct": "predictions/crn_pilot100_qwen25coder3b_direct.jsonl",
+      "gold_location": "predictions/crn_pilot100_qwen25coder3b_gold_location.jsonl"
+    }
+  },
+  "notes": [
+    "This config keeps the seed=42 CodeReview-New 100-example subset and the original no_review/direct/gold_location conditions.",
+    "The default model list is selected from installed Ollama tags by family. Missing required families stop the run and print pull hints without pulling models.",
+    "starcoder2:7b is intentionally excluded from the main experiment because the smoke test returned mostly empty outputs under the current Ollama chat backend.",
+    "qwen2.5-coder:3b is recorded only as an installed fallback candidate if codegemma:7b is unavailable; it is not part of the main full-run model list."
+  ]
+}

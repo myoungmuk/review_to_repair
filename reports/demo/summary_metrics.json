@@ -1,0 +1,29 @@
+{
+  "summary": [
+    {
+      "baseline": "published_chatgpt_direct",
+      "n": 2,
+      "exact_match": 0.0,
+      "exact_match_pct": 0.0,
+      "exact_match_trim": 1.0,
+      "exact_match_trim_pct": 100.0,
+      "exact_match_line_trim": 1.0,
+      "exact_match_line_trim_pct": 100.0,
+      "location_overlap_f1": 1.0,
+      "location_overlap_f1_pct": 100.0
+    },
+    {
+      "baseline": "published_codereviewer",
+      "n": 2,
+      "exact_match": 0.0,
+      "exact_match_pct": 0.0,
+      "exact_match_trim": 0.0,
+      "exact_match_trim_pct": 0.0,
+      "exact_match_line_trim": 0.0,
+      "exact_match_line_trim_pct": 0.0,
+      "location_overlap_f1": 0.0,
+      "location_overlap_f1_pct": 0.0
+    }
+  ],
+  "missing_prediction_ids": []
+}

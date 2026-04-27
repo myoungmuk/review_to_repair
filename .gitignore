@@ -1,0 +1,18 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+.DS_Store
+
+# Raw datasets and large artifacts
+data_raw/
+*.rar
+*.zip
+
+# Generated experiment artifacts
+prompts/crn_*/
+predictions/crn_*
+reports/crn_*
+data/processed/crn_*
+results/**/generations/
+results/**/plots/

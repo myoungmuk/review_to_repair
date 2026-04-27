@@ -1,0 +1,114 @@
+Review-to-Repair에서 변경 위치 파악의 진단적 분석:
+CodeReview-New 기반 파일럿 연구
+Diagnostic Analysis of Change Localisation in Review-to-Repair: A Pilot Study on CodeReview-New
+
+요약
+본 연구는 Review-to-Repair 실패를 review understanding, change localisation, edit generation으로 분해해 보기 위한 3조건 진단 프로토콜을 점검한다. CodeReview-New 100개 서브셋과 qwen2.5-coder:3b를 사용하여 no_review, direct, gold_location을 비교하였다. direct의 exact_match_line_trim 성공은 4/100으로 no_review의 0/100보다 4건 많았고, gold_location의 exact-match 성공은 3/100에 머물렀다. 반면 location_overlap_f1은 direct 0.622에서 gold_location 0.727로 증가하였다. 여기서 location_overlap_f1은 독립적인 위치 예측 정확도가 아니라, 출력 변경 라인과 정답 변경 라인 사이의 사후 within-snippet 중첩을 나타내는 진단 지표다. 또한 gold_location은 정답 변경 위치를 명시적으로 주입한 oracle 진단 조건이다. 본 파일럿 결과는 위치 정보가 관련 요인일 수 있으나, 위치 중첩 증가가 exact-match 성공 증가로 바로 이어지지 않을 수 있음을 시사한다.
+
+키워드
+코드 리뷰, 자동 코드 수정, 대규모 언어모델, 변경 위치 파악, 프로그램 수리
+
+1. 서론
+코드 리뷰 환경에서는 개발자가 자연어 리뷰 코멘트를 바탕으로 코드를 수정하고 재수정하는 과정이 반복된다. 최근 언어모델 기반 자동 코드 수정 연구는 이러한 과정을 자동화하려 하지만, 실패가 리뷰 의미 이해 부족에서 오는지, 수정 위치 파악 부족에서 오는지, 혹은 목표 위치에 도달한 뒤의 편집 생성 실패에서 오는지는 충분히 분리되어 읽히지 않는 경우가 많다.
+
+기존 연구는 코드 리뷰 자동화, 리뷰 기반 수정, 자동 프로그램 수리의 성능 자체를 주로 비교해 왔다. 그러나 Review-to-Repair 설정에서 입력 정보를 통제하여 실패 요인을 review understanding, change localisation, edit generation으로 나누어 진단하는 최소 비교 구조는 아직 제한적으로 다루어졌다.
+
+본 연구는 새로운 수리 시스템을 제안하는 논문이 아니라, no_review, direct, gold_location의 3조건 비교를 통해 Review-to-Repair 실패를 진단적으로 읽기 위한 파일럿 연구다. no_review와 direct의 비교는 리뷰 코멘트가 제공하는 정보의 차이를, direct와 gold_location의 비교는 정답 위치가 입력에 명시적으로 주어졌을 때도 남는 오류를 살펴보게 한다. 실험은 CodeReview-New 100개 서브셋과 qwen2.5-coder:3b를 사용해 수행하였다.
+
+본 논문의 기여는 다음 세 가지다. 첫째, Review-to-Repair를 위한 no_review/direct/gold_location 3조건 진단 프로토콜을 정리한다. 둘째, 본 파일럿 설정에서 정답 위치 주입이 within-snippet 위치 중첩을 높였지만 exact-match 성공 증가로 바로 이어지지 않았다는 관찰을 보고한다. 셋째, 13개 탐색 사례를 통해 위치 정보 이후에도 잔여 실패가 이질적일 수 있음을 논의한다.
+
+2. 관련연구
+2.1 코드 리뷰 자동화
+코드 리뷰 자동화 연구는 리뷰 코멘트 생성, 리뷰 태스크용 사전학습, 리뷰 기반 코드 변경 자동화 등을 다루어 왔다[1-3]. 이러한 연구는 리뷰 정보를 모델 입력으로 활용하는 가능성을 보여 주었지만, Review-to-Repair 실패를 세부 요인으로 분해해 읽는 진단 구조 자체를 주된 목표로 삼지는 않았다.
+
+2.2 리뷰 기반 자동 수정과 APR
+Review4Repair[4]는 코드 리뷰 코멘트를 자동 프로그램 수리와 연결하여 리뷰 정보의 활용 가능성을 보여 준 대표적 사례다. 자동 프로그램 수리 연구[5] 또한 코드 LLM의 영향과 한계를 분석해 왔지만, 본 연구는 end-to-end 성능 경쟁보다 리뷰 의미, 위치, 편집의 상대적 역할을 통제 비교로 읽는 데 초점을 둔다.
+
+2.3 실패 요인 분해와 진단 평가
+선행연구에도 오류 분석이나 사례 논의는 존재하지만, Review-to-Repair 설정에서 review understanding, change localisation, edit generation을 분리된 조건 차이로 읽는 연구는 아직 제한적이다. 본 연구는 이러한 공백을 메우기 위한 최소 진단 프로토콜의 파일럿 점검으로 위치를 잡는다.
+
+3. 3조건 진단 프레임워크
+3.1 프레임워크 개요
+그림 1은 본 연구의 3조건 기반 비교 구조를 요약한다. 각 조건은 동일한 입력 예제 집합에 대해 서로 다른 정보만 추가하며, 출력은 동일한 평가 파이프라인으로 비교한다.
+
+그림 1. 3조건 기반 Review-to-Repair 진단 프레임워크
+Input Example -> no_review / code only -> LLM Repair -> Metrics
+Input Example -> direct / code + review -> LLM Repair -> Metrics
+Input Example -> gold_location / code + review + gold marker -> LLM Repair -> Metrics
+direct - no_review = review comment effect
+gold_location - direct = injected location information effect
+
+표 1. 세 조건의 입력 구성
+조건 / 제공 입력 / 진단 목적
+no_review / 코드 / 리뷰 없는 베이스라인
+direct / 코드 + 리뷰 코멘트 / 리뷰 코멘트 제공 효과 관찰
+gold_location / 코드 + 리뷰 코멘트 + 정답 위치 마커 / 정답 위치 주입의 진단적 효과 관찰
+
+여기서 gold_location은 실제 배포 환경이 아니라 정답 변경 위치가 입력에 명시적으로 제공된 oracle 진단 조건이다. 따라서 이를 위치 정보의 이론적 최대 효과나 localisation이 해결된 상태로 해석하지 않는다.
+
+3.2 연구 질문
+RQ1. 리뷰 코멘트는 no_review 대비 exact-match 기준 수정 성공률에 어떤 차이를 보이는가?
+RQ2. gold_location은 출력 변경 라인과 정답 변경 라인의 within-snippet 중첩 및 exact-match 수정 성공률을 변화시키는가?
+RQ3. 위치 중첩의 증가는 exact-match 기준 정확 수정률 향상으로 이어지는가?
+RQ4(탐색적). 위치 정보 주입 이후에도 어떤 잔여 실패 유형이 관찰되는가?
+
+4. 실험
+4.1 실험 요약
+실험 대상은 CodeReview-New이며, 데이터 단위는 파일 전체가 아니라 코드 스니펫 혹은 hunk다. 따라서 본 연구의 change localisation 해석 범위는 full-file이 아니라 within-snippet으로 제한된다. 본 파일럿에서는 100개 예제로 구성된 서브셋을 사용하였다. 주 모델은 qwen2.5-coder:3b이며, Ollama 백엔드에서 temperature=0.0, seed=42 설정으로 실행하였다. 보조 점검으로는 동일한 30개 부분집합에서 qwen2.5-coder:7b를 확인하였다.
+
+4.2 평가 척도 및 비교 조건
+정확 수정 성능은 exact_match_line_trim으로 측정하였다. 이는 공백과 줄 끝 차이를 정리한 뒤 모델 출력과 정답 코드의 줄 단위 텍스트 일치 여부를 보는 엄격한 지표다. location_overlap_f1은 모델이 변경 위치를 독립적으로 예측했는지를 직접 측정하는 지표가 아니다. 본 연구에서는 old 대비 모델 출력에서 실제로 변경된 라인 집합과 old 대비 정답 new에서 변경된 라인 집합 사이의 사후 F1 중첩으로 계산한다. 따라서 이 지표는 독립적 위치 예측 정확도 자체보다는, 출력 변경 라인과 정답 변경 라인의 within-snippet 중첩을 보는 진단 지표로 해석한다. 조건 간 차이는 paired bootstrap 기반 95% 신뢰구간으로 제시하였다.
+
+gold_location 조건에서는 정답 diff로부터 변경 대상 old-line span을 추출한 뒤, 구조화된 위치 마커를 입력 스니펫 안에 삽입하여 모델에 제공하였다. 모든 조건은 동일한 예제 집합과 동일한 평가 파이프라인에서 수행되었다.
+
+4.3 실험 결과
+표 2. 메인 결과
+조건 / exact_match_line_trim / location_overlap_f1
+no_review / 0.00 / 0.613
+direct / 0.04 / 0.622
+gold_location / 0.03 / 0.727
+
+표 3. Bootstrap Gain 요약
+비교 / 지표 / Gain / 95% CI
+direct - no_review / Exact / +0.040 / [0.010,0.080]
+gold_location - direct / Exact / -0.010 / [-0.040,0.020]
+direct - no_review / Loc.F1 / +0.009 / [-0.056,0.073]
+gold_location - direct / Loc.F1 / +0.105 / [0.042,0.168]
+
+RQ1. 리뷰 코멘트 제공 효과
+본 100개 서브셋과 qwen2.5-coder:3b 설정에서 direct의 exact-match 성공은 4/100으로 no_review의 0/100보다 4건 많았다. direct - no_review의 exact-match gain은 +0.040이었고, 본 표본에서 95% 신뢰구간은 [0.010, 0.080]이었다. 이는 리뷰 코멘트가 일부 사례에서 수정 성공에 도움을 줄 수 있다는 초기 신호로 해석할 수 있다. 다만 절대 성공 수가 작으므로 일반화된 결론으로 해석해서는 안 된다.
+
+RQ2. 정답 위치 주입 효과
+gold_location 조건에서 location_overlap_f1 기준의 within-snippet 중첩은 0.622에서 0.727로 증가하였다. gold_location - direct의 Loc.F1 gain은 +0.105였고, 본 표본에서 95% 신뢰구간은 [0.042, 0.168]로 0을 포함하지 않았다. 그러나 gold_location의 exact-match 성공은 3/100에 머물렀고, gold_location - direct의 exact-match gain은 -0.010, 95% 신뢰구간 [-0.040, 0.020]으로 0을 포함하였다. 즉, 정답 위치 주입 조건은 출력 변경 라인과 정답 변경 라인의 중첩을 높였지만, exact-match 기준 정확 수정률 향상은 확인하지 못했다.
+
+RQ3. 위치 중첩 증가와 정확 수정의 관계
+본 파일럿에서는 위치 중첩의 증가가 exact-match 성공 향상으로 바로 이어지지 않았다. 이 결과는 위치 정보가 불필요하다는 뜻이 아니라, 위치 정보 외에도 리뷰 의미 해석과 편집 생성 단계의 병목이 남을 수 있음을 시사한다. 동시에 본 결과만으로 localisation이 지배적 병목이라고 결론내릴 수는 없다.
+
+5. 토의
+5.1 구체 사례
+탐색 사례 중 `crn-013469`(kotlin)은 gold_location이 direct 실패를 exact-match 성공으로 전환한 실제 예제였다. 리뷰 코멘트는 `LocaleAwareActivity`가 해당 화면에서 불필요한 코드를 만들었다면 제거하라는 취지였고, gold는 관련 LiveData 필드와 `setAppLanguage` 메서드를 삭제한 버전이었다. direct 출력은 삭제 대신 기존 코드를 유지한 채 reminder comment를 덧붙여 exact_match_line_trim 0, location_overlap_f1 0.0을 보였다. 반면 gold_location 출력은 표시된 삭제 구간을 제거하여 exact_match_line_trim 1, location_overlap_f1 1.0을 기록했다. 이 사례는 위치 정보가 도움이 되는 경우가 존재함을 보여 주지만, 13개 탐색 사례 중 하나일 뿐이며 전체 100개 예제의 분포를 대표하지는 않는다.
+
+5.2 탐색적 오류 분석과 위협 요인
+잔여 실패 원인 파악을 위해 13개 사례(실패 11건, 성공 2건)를 정성적으로 검토하였다. 이 사례 집합은 체계적 표본이 아니며, 라벨은 체계적 복수 평가자 검증을 거치지 않은 탐색적 잠정 분류다. 따라서 아래 논의는 탐색적 오류 분석으로만 해석해야 하며, 전체 100개 예제의 오류 유형 분포를 의미하지 않는다.
+
+이 탐색 사례들에서는 위치 정보 주입 이후에도 편집 생성 실패와 양립 가능한 사례, 리뷰 코멘트 의미를 충분히 반영하지 못한 사례, 의미상 유사할 수 있으나 snippet-level exact-match 기준에서는 실패로 처리되는 사례가 반복적으로 관찰되었다. 이는 위치 정보 이후에도 잔여 실패가 이질적일 수 있음을 시사하지만, 어느 유형이 우세한지까지 말해 주지는 않는다. 추가 점검에서도 유사한 정성적 패턴이 관찰되었는데, 동일한 30개 부분집합에서 3B와 7B 모두 direct가 no_review보다 exact-match 기준에서 더 나은 수치를 보였고, gold_location은 direct보다 location_overlap_f1을 더 높였지만 exact-match 개선은 보여주지 못했다. 다만 이 점검들은 부분적 sanity check일 뿐이며, 표본과 모델 수가 제한적이므로 이상치 가능성을 완전히 배제할 수는 없다.
+
+본 연구의 주요 한계는 다음과 같다. 메인 실험은 100개 서브셋과 단일 주 모델에 기반한 파일럿이며, CodeReview-New가 snippet/hunk-level 데이터이므로 change localisation 해석 범위는 within-snippet으로 한정된다. 또한 location_overlap_f1은 독립 localisation accuracy가 아니라 최종 출력 기반 사후 중첩 지표이고, 오류 분석은 13개 탐색 사례에 기반한다. 마지막으로 exact match 평가는 의미적으로 유효한 패치를 실패로 처리할 수 있다.
+
+6. 결론
+본 연구는 CodeReview-New 100개 서브셋과 qwen2.5-coder:3b를 사용한 파일럿 실험에서, 리뷰 코멘트 제공이 no_review의 0/100 대비 direct의 4/100 exact-match 성공으로 이어진 반면, 정답 위치 마커 제공은 location_overlap_f1을 0.622에서 0.727로 높였지만 exact-match 성공은 3/100에 머물렀음을 관찰하였다. 이는 위치 정보가 Review-to-Repair의 관련 요인일 수 있으나, 위치 정보만으로 최종 수정 성공을 설명하기에는 부족할 수 있다는 초기 증거로 해석해야 한다.
+
+동시에 본 결과는 몇 가지 한계와 함께 읽혀야 한다. 본 연구는 단일 모델과 100개 서브셋에 기반한 파일럿이며, within-snippet 진단과 exact-match 평가에 한정되어 있다. 따라서 본 결과만으로 localisation의 상대적 중요성을 일반화하거나 지배적 병목을 확정할 수는 없다.
+
+후속 연구는 다음 네 방향으로 압축될 수 있다.
+1. 더 큰 표본과 복수 모델로 동일 프로토콜을 재현한다.
+2. no_review+gold_location 및 predicted_location 조건을 추가한다.
+3. 체계적 오류 라벨링과 복수 평가자 검증을 수행한다.
+4. exact match 외에 의미 기반 또는 실행 기반 평가를 추가한다.
+
+참고문헌
+[1] M. Tufano, C. Watson, G. Bavota, M. Di Penta, M. White, and D. Poshyvanyk, "Towards Automating Code Review Activities," Proc. ICSE 2021, pp. 163–174, 2021.
+[2] M. Tufano, D. Drain, A. Svyatkovskiy, S. K. Deng, and N. Sundaresan, "Using Pre-Trained Models to Boost Code Review Automation," Proc. ICSE 2022, pp. 1–13, 2022.
+[3] Z. Li, S. Lu, S. Guo, N. Duan, S. Jannu, G. Jenks, D. Majumder, J. Green, A. Svyatkovskiy, S. Fu, and N. Sundaresan, "Automating Code Review Activities by Large-Scale Pre-Training," Proc. FSE 2022, pp. 1035–1047, 2022.
+[4] F. Huq, M. Hasan, Md. M. A. Haque, S. Mahbub, A. Iqbal, and T. Ahmed, "Review4Repair: Code review aided automatic program repairing," Information and Software Technology, vol. 143, art. no. 106765, 2022. doi: 10.1016/j.infsof.2021.106765.
+[5] W. Jiang, F. Shi, D. Lu, Y. Liu, H. Wang, Q. Chen, and T. Liu, "Impact of Code Language Models on Automated Program Repair," Proc. ICSE 2023, pp. 1430–1442, 2023.

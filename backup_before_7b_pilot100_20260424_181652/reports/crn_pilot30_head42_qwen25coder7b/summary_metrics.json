@@ -1,0 +1,41 @@
+{
+  "summary": [
+    {
+      "baseline": "direct",
+      "n": 30,
+      "exact_match": 0.1,
+      "exact_match_pct": 10.0,
+      "exact_match_trim": 0.1,
+      "exact_match_trim_pct": 10.0,
+      "exact_match_line_trim": 0.1,
+      "exact_match_line_trim_pct": 10.0,
+      "location_overlap_f1": 0.5887850918145036,
+      "location_overlap_f1_pct": 58.878509181450355
+    },
+    {
+      "baseline": "gold_location",
+      "n": 30,
+      "exact_match": 0.03333333333333333,
+      "exact_match_pct": 3.3333333333333335,
+      "exact_match_trim": 0.03333333333333333,
+      "exact_match_trim_pct": 3.3333333333333335,
+      "exact_match_line_trim": 0.03333333333333333,
+      "exact_match_line_trim_pct": 3.3333333333333335,
+      "location_overlap_f1": 0.8050770333515431,
+      "location_overlap_f1_pct": 80.50770333515432
+    },
+    {
+      "baseline": "no_review",
+      "n": 30,
+      "exact_match": 0.0,
+      "exact_match_pct": 0.0,
+      "exact_match_trim": 0.0,
+      "exact_match_trim_pct": 0.0,
+      "exact_match_line_trim": 0.0,
+      "exact_match_line_trim_pct": 0.0,
+      "location_overlap_f1": 0.5594682115270351,
+      "location_overlap_f1_pct": 55.94682115270351
+    }
+  ],
+  "missing_prediction_ids": []
+}

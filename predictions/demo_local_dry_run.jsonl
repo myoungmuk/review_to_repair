@@ -1,0 +1,1 @@
+{"id": "crn-000001", "baseline": "direct", "prediction": "DRY_RUN_PLACEHOLDER direct crn-000001", "model": "local-demo", "backend": "ollama", "sampling_note": "dry_run placeholder; local backend not called"}

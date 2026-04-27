@@ -1,0 +1,130 @@
+{
+  "started_at": "2026-04-26T22:30:18.176667+00:00",
+  "config": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\configs\\multi_model_r2r_seed42.json",
+  "output_root": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_all3_np512",
+  "gold_path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\data\\processed\\crn_pilot100.jsonl",
+  "prompt_dir": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\prompts\\crn_pilot100",
+  "models": [
+    "qwen2.5-coder:7b",
+    "deepseek-coder:6.7b",
+    "codegemma:7b"
+  ],
+  "conditions": [
+    "no_review",
+    "direct",
+    "gold_location"
+  ],
+  "limit": 10,
+  "backend": "ollama",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "temperature": 0.0,
+  "seed": 42,
+  "num_predict": 512,
+  "bootstrap_iters": 1000,
+  "dry_run": false,
+  "resume": true,
+  "reuse_legacy_predictions": false,
+  "completed_at": "2026-04-26T22:30:18.267551+00:00",
+  "generation_runs": [
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "no_review",
+      "path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_all3_np512\\generations\\qwen2.5-coder-7b\\no_review.jsonl",
+      "selected_examples": 10,
+      "existing_rows_reused": 10,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "direct",
+      "path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_all3_np512\\generations\\qwen2.5-coder-7b\\direct.jsonl",
+      "selected_examples": 10,
+      "existing_rows_reused": 10,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "gold_location",
+      "path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_all3_np512\\generations\\qwen2.5-coder-7b\\gold_location.jsonl",
+      "selected_examples": 10,
+      "existing_rows_reused": 10,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "no_review",
+      "path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_all3_np512\\generations\\deepseek-coder-6.7b\\no_review.jsonl",
+      "selected_examples": 10,
+      "existing_rows_reused": 10,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "direct",
+      "path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_all3_np512\\generations\\deepseek-coder-6.7b\\direct.jsonl",
+      "selected_examples": 10,
+      "existing_rows_reused": 10,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "gold_location",
+      "path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_all3_np512\\generations\\deepseek-coder-6.7b\\gold_location.jsonl",
+      "selected_examples": 10,
+      "existing_rows_reused": 10,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "codegemma:7b",
+      "condition": "no_review",
+      "path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_all3_np512\\generations\\codegemma-7b\\no_review.jsonl",
+      "selected_examples": 10,
+      "existing_rows_reused": 10,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "codegemma:7b",
+      "condition": "direct",
+      "path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_all3_np512\\generations\\codegemma-7b\\direct.jsonl",
+      "selected_examples": 10,
+      "existing_rows_reused": 10,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "codegemma:7b",
+      "condition": "gold_location",
+      "path": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_all3_np512\\generations\\codegemma-7b\\gold_location.jsonl",
+      "selected_examples": 10,
+      "existing_rows_reused": 10,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    }
+  ],
+  "combined_generations": "C:\\Users\\myoun\\Desktop\\review_to_repair_crn\\results\\multi_model_r2r_seed42_smoke10_all3_np512\\generations\\all_generations.jsonl"
+}

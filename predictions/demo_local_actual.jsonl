@@ -1,0 +1,1 @@
+{"id": "crn-000001", "baseline": "direct", "prediction": "```JavaScript\nconst timeout = 5000\nfetch(url, { timeout })\n```", "model": "qwen2.5-coder:7b", "backend": "ollama", "sampling_note": "backend=ollama temperature=0.0 seed=42", "response_id": "2026-04-21T02:51:46.1913215Z"}

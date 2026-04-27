@@ -1,0 +1,4 @@
+{"id": "crn-000001", "baseline": "published_chatgpt_direct", "prediction": "const timeout = 5000\nfetch(url, { timeout })\n"}
+{"id": "crn-000001", "baseline": "published_codereviewer", "prediction": "const timeout = 1000\nfetch(url, { timeout })\n"}
+{"id": "crn-000000", "baseline": "published_chatgpt_direct", "prediction": "def add(a, b):\n    return a + b\n"}
+{"id": "crn-000000", "baseline": "published_codereviewer", "prediction": "def add(a,b):\n    return a+b\n"}

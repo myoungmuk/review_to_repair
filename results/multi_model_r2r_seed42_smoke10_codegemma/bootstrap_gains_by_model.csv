@@ -1,0 +1,9 @@
+model,comparison,metric,paired_n,gain,gain_pct,ci95_low,ci95_high,ci95_low_pct,ci95_high_pct
+codegemma:7b,direct - no_review,exact_match_line_trim,10,0.1,10.0,0.0,0.3,0.0,30.0
+codegemma:7b,direct - no_review,location_overlap_f1,10,-0.14157551220709116,-14.157551220709117,-0.44369871794871796,0.1702050300576616,-44.3698717948718,17.02050300576616
+codegemma:7b,gold_location - direct,exact_match_line_trim,10,-0.1,-10.0,-0.3,0.0,-30.0,0.0
+codegemma:7b,gold_location - direct,location_overlap_f1,10,0.22564102564102564,22.564102564102566,-0.05555555555555556,0.5068376068376068,-5.555555555555556,50.68376068376068
+macro_average,direct - no_review,exact_match_line_trim,10,0.1,10.0,0.0,0.3,0.0,30.0
+macro_average,direct - no_review,location_overlap_f1,10,-0.14157551220709116,-14.157551220709117,-0.44369871794871796,0.1702050300576616,-44.3698717948718,17.02050300576616
+macro_average,gold_location - direct,exact_match_line_trim,10,-0.1,-10.0,-0.3,0.0,-30.0,0.0
+macro_average,gold_location - direct,location_overlap_f1,10,0.22564102564102564,22.564102564102566,-0.05555555555555556,0.5068376068376068,-5.555555555555556,50.68376068376068
