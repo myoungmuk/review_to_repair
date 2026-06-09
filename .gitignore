@@ -16,3 +16,6 @@ reports/crn_*
 data/processed/crn_*
 results/**/generations/
 results/**/plots/
+
+# Local backups (large, not paper assets)
+backup_before_*/
