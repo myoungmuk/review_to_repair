@@ -1,0 +1,10 @@
+model,condition,n_expected,n_output,n_valid,exact_match_line_trim,location_overlap_f1,exact_match_line_trim_pct,location_overlap_f1_pct
+qwen2.5-coder:7b,no_review,2,2,2,0.0,0.3333333333333333,0.0,33.33333333333333
+qwen2.5-coder:7b,direct,2,2,2,0.0,0.3333333333333333,0.0,33.33333333333333
+qwen2.5-coder:7b,gold_location,2,2,2,0.0,0.3333333333333333,0.0,33.33333333333333
+deepseek-coder:6.7b,no_review,2,2,2,0.0,0.3333333333333333,0.0,33.33333333333333
+deepseek-coder:6.7b,direct,2,2,2,0.0,0.3333333333333333,0.0,33.33333333333333
+deepseek-coder:6.7b,gold_location,2,2,2,0.0,0.3333333333333333,0.0,33.33333333333333
+codegemma:7b,no_review,2,2,2,0.0,0.3333333333333333,0.0,33.33333333333333
+codegemma:7b,direct,2,2,2,0.0,0.3333333333333333,0.0,33.33333333333333
+codegemma:7b,gold_location,2,2,2,0.0,0.3333333333333333,0.0,33.33333333333333

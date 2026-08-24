@@ -1,0 +1,4 @@
+model,condition,n_output,raw_len_min,raw_len_mean,raw_len_median,raw_len_max,extracted_len_min,extracted_len_mean,extracted_len_median,extracted_len_max,empty_raw_count,empty_extracted_count,very_short_extracted_count,unclosed_code_fence_count,near_num_predict_char_risk_count,suspicious_case_count
+qwen2.5-coder:32b,no_review,10,250,883.9,682.5,2155,126,398.9,395.5,663,0,0,0,2,1,2
+qwen2.5-coder:32b,direct,10,164,479.0,440.5,975,150,407.1,427.5,772,0,0,0,0,0,0
+qwen2.5-coder:32b,gold_location,10,162,377.3,321.0,775,148,364.1,310.0,764,0,0,0,0,0,0

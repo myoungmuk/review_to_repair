@@ -1,0 +1,3 @@
+model,paired_n,both_exact,direct_only_exact,gold_location_only_exact,neither_exact,net_exact_delta_count,net_exact_delta_pct,regression_count,regression_pct_of_pairs
+deepseek-coder:6.7b,14855,19,87,73,14676,-14,-0.09424436216762033,87,0.5856613934702121
+qwen2.5-coder:7b,14855,413,933,577,12932,-356,-2.3964994951194885,933,6.280713564456412

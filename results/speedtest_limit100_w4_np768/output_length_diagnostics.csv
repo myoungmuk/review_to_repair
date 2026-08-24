@@ -1,0 +1,10 @@
+model,condition,n_output,raw_len_min,raw_len_mean,raw_len_median,raw_len_max,extracted_len_min,extracted_len_mean,extracted_len_median,extracted_len_max,empty_raw_count,empty_extracted_count,very_short_extracted_count,unclosed_code_fence_count,near_num_predict_char_risk_count,suspicious_case_count
+qwen2.5-coder:7b,no_review,100,62,402.51,377.5,1201,53,390.23,363.5,1187,0,0,0,0,0,0
+qwen2.5-coder:7b,direct,100,56,428.69,393.5,1399,47,416.42,380.5,1389,0,0,0,0,0,0
+qwen2.5-coder:7b,gold_location,100,26,422.81,389.5,1361,17,386.71,371.5,1351,0,0,1,0,0,1
+deepseek-coder:6.7b,no_review,100,239,937.07,934.5,2238,70,467.33,422.5,1529,0,0,0,3,0,3
+deepseek-coder:6.7b,direct,100,30,472.94,414.0,1390,12,410.65,382.0,1379,0,0,1,1,0,2
+deepseek-coder:6.7b,gold_location,100,42,423.98,386.5,1398,32,388.51,347.0,1387,0,0,0,3,0,3
+codegemma:7b,no_review,100,55,441.84,432.5,1390,46,429.53,418.5,1380,0,0,0,0,0,0
+codegemma:7b,direct,100,56,437.55,415.0,1382,47,425.26,401.0,1372,0,0,0,0,0,0
+codegemma:7b,gold_location,100,28,392.67,385.5,1176,19,379.13,370.5,1096,0,0,1,1,0,2

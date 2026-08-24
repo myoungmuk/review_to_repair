@@ -1,0 +1,4 @@
+model,condition,expected_count,output_count,missing_example_id_count,duplicate_example_id_count,generation_error_count,extraction_failure_count,evaluation_failure_count,valid_evaluation_count
+qwen2.5-coder:32b,no_review,3,3,0,0,0,0,0,3
+qwen2.5-coder:32b,direct,3,3,0,0,0,0,0,3
+qwen2.5-coder:32b,gold_location,3,3,0,0,0,0,0,3

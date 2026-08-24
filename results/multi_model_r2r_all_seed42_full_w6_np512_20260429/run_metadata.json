@@ -1,0 +1,97 @@
+{
+  "started_at": "2026-04-30T03:16:59.232009+00:00",
+  "config": "/home/selab/2026/review_to_repair_crn/configs/multi_model_r2r_all_seed42_optimized.json",
+  "output_root": "/home/selab/2026/review_to_repair_crn/results/multi_model_r2r_all_seed42_full_w6_np512_20260429",
+  "gold_path": "/home/selab/2026/review_to_repair_crn/data/processed/crn_all.jsonl",
+  "prompt_dir": "/home/selab/2026/review_to_repair_crn/prompts/crn_all",
+  "models": [
+    "qwen2.5-coder:7b",
+    "deepseek-coder:6.7b"
+  ],
+  "conditions": [
+    "no_review",
+    "direct",
+    "gold_location"
+  ],
+  "limit": null,
+  "backend": "ollama",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "temperature": 0.0,
+  "seed": 42,
+  "num_predict": 512,
+  "bootstrap_iters": 1000,
+  "workers": 6,
+  "dry_run": false,
+  "resume": true,
+  "reuse_legacy_predictions": false,
+  "completed_at": "2026-04-30T06:50:37.059043+00:00",
+  "generation_runs": [
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "no_review",
+      "path": "/home/selab/2026/review_to_repair_crn/results/multi_model_r2r_all_seed42_full_w6_np512_20260429/generations/qwen2.5-coder-7b/no_review.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 14855,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "direct",
+      "path": "/home/selab/2026/review_to_repair_crn/results/multi_model_r2r_all_seed42_full_w6_np512_20260429/generations/qwen2.5-coder-7b/direct.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 14855,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "gold_location",
+      "path": "/home/selab/2026/review_to_repair_crn/results/multi_model_r2r_all_seed42_full_w6_np512_20260429/generations/qwen2.5-coder-7b/gold_location.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 14855,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "no_review",
+      "path": "/home/selab/2026/review_to_repair_crn/results/multi_model_r2r_all_seed42_full_w6_np512_20260429/generations/deepseek-coder-6.7b/no_review.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 6872,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 7983,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "direct",
+      "path": "/home/selab/2026/review_to_repair_crn/results/multi_model_r2r_all_seed42_full_w6_np512_20260429/generations/deepseek-coder-6.7b/direct.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 14855,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "gold_location",
+      "path": "/home/selab/2026/review_to_repair_crn/results/multi_model_r2r_all_seed42_full_w6_np512_20260429/generations/deepseek-coder-6.7b/gold_location.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 14855,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    }
+  ],
+  "combined_generations": "/home/selab/2026/review_to_repair_crn/results/multi_model_r2r_all_seed42_full_w6_np512_20260429/generations/all_generations.jsonl"
+}

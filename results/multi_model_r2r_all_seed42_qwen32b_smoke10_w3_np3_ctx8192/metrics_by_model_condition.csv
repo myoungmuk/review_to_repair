@@ -1,0 +1,4 @@
+model,condition,n_expected,n_output,n_valid,exact_match_line_trim,location_overlap_f1,exact_match_line_trim_pct,location_overlap_f1_pct
+qwen2.5-coder:32b,no_review,10,10,10,0.0,0.5322700691121743,0.0,53.22700691121744
+qwen2.5-coder:32b,direct,10,10,10,0.2,0.5844444444444444,20.0,58.44444444444444
+qwen2.5-coder:32b,gold_location,10,10,10,0.1,0.6935353535353534,10.0,69.35353535353535

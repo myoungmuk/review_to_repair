@@ -1,0 +1,26 @@
+{
+  "started_at": "2026-05-25T10:44:45.811198+00:00",
+  "config": "/cephfs/lab/users/2022810001/review-to-repair01/configs/multi_model_r2r_all_seed42_optimized.json",
+  "output_root": "/cephfs/lab/users/2022810001/review-to-repair01/results/multi_model_r2r_all_seed42_qwen32b_smoke10_w4_np4_ctx8192",
+  "gold_path": "/cephfs/lab/users/2022810001/review-to-repair01/data/processed/crn_all.jsonl",
+  "prompt_dir": "/cephfs/lab/users/2022810001/review-to-repair01/prompts/crn_all",
+  "models": [
+    "qwen2.5-coder:32b"
+  ],
+  "conditions": [
+    "no_review",
+    "direct",
+    "gold_location"
+  ],
+  "limit": 10,
+  "backend": "ollama",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "temperature": 0.0,
+  "seed": 42,
+  "num_predict": 512,
+  "bootstrap_iters": 1000,
+  "workers": 4,
+  "dry_run": false,
+  "resume": true,
+  "reuse_legacy_predictions": false
+}

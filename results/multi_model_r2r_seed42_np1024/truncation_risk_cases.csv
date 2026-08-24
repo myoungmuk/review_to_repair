@@ -1,0 +1,6 @@
+model,condition,example_id,raw_output_len_chars,extracted_code_len_chars,flags,warning,error
+deepseek-coder:6.7b,no_review,crn-006672,697,697,unclosed_code_fence,no_code_fence_used_raw_text,
+deepseek-coder:6.7b,no_review,crn-012114,596,596,unclosed_code_fence,no_code_fence_used_raw_text,
+deepseek-coder:6.7b,no_review,crn-006483,814,814,unclosed_code_fence,no_code_fence_used_raw_text,
+deepseek-coder:6.7b,gold_location,crn-008823,216,216,unclosed_code_fence,no_code_fence_used_raw_text,
+deepseek-coder:6.7b,gold_location,crn-009938,714,714,unclosed_code_fence,no_code_fence_used_raw_text,

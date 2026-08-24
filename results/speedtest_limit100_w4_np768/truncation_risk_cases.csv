@@ -1,0 +1,12 @@
+model,condition,example_id,raw_output_len_chars,extracted_code_len_chars,flags,warning,error
+qwen2.5-coder:7b,gold_location,crn-002590,26,17,very_short_extracted_code,extracted_from_code_fence,
+deepseek-coder:6.7b,no_review,crn-007371,671,671,unclosed_code_fence,no_code_fence_used_raw_text,
+deepseek-coder:6.7b,no_review,crn-012630,812,812,unclosed_code_fence,no_code_fence_used_raw_text,
+deepseek-coder:6.7b,no_review,crn-012612,667,667,unclosed_code_fence,no_code_fence_used_raw_text,
+deepseek-coder:6.7b,direct,crn-007371,526,526,unclosed_code_fence,no_code_fence_used_raw_text,
+deepseek-coder:6.7b,direct,crn-010761,814,12,very_short_extracted_code,extracted_from_code_fence,
+deepseek-coder:6.7b,gold_location,crn-010297,358,358,unclosed_code_fence,no_code_fence_used_raw_text,
+deepseek-coder:6.7b,gold_location,crn-004693,404,404,unclosed_code_fence,no_code_fence_used_raw_text,
+deepseek-coder:6.7b,gold_location,crn-012612,510,510,unclosed_code_fence,no_code_fence_used_raw_text,
+codegemma:7b,gold_location,crn-000985,484,483,unclosed_code_fence,no_code_fence_used_raw_text,
+codegemma:7b,gold_location,crn-002590,28,19,very_short_extracted_code,extracted_from_code_fence,

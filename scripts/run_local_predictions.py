@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import time
 import urllib.error
@@ -171,6 +172,9 @@ def request_ollama(
         options["seed"] = seed
     if num_predict is not None:
         options["num_predict"] = num_predict
+    num_ctx = os.environ.get("OLLAMA_NUM_CTX")
+    if num_ctx:
+        options["num_ctx"] = int(num_ctx)
     payload = {
         "model": model,
         "messages": messages,

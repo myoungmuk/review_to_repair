@@ -8,6 +8,7 @@ import random
 import re
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -140,6 +141,15 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("--num-predict", type=int, default=None, help="Optional Ollama max generated tokens")
     ap.add_argument("--bootstrap-iters", type=int, default=None)
     ap.add_argument("--timeout-seconds", type=float, default=900.0)
+    ap.add_argument(
+        "--workers",
+        type=int,
+        default=1,
+        help=(
+            "Parallel backend requests per model/condition. Default 1 preserves the "
+            "original sequential behavior; use 2-4 after a smoke test on large-GPU local servers."
+        ),
+    )
     ap.add_argument("--resume", action="store_true", help="Reuse rows already present in the generation files.")
     ap.add_argument(
         "--reuse-legacy-predictions",
@@ -372,6 +382,9 @@ def generate_condition(
     seed: int,
     num_predict: int | None,
 ) -> dict[str, Any]:
+    if args.workers < 1:
+        raise ValueError("--workers must be >= 1")
+
     selected_ids = {str(row["id"]) for row in gold_rows}
     gold_by_id = rows_by_id(gold_rows)
     prompt_by_id = rows_by_id(prompt_rows)
@@ -385,13 +398,17 @@ def generate_condition(
     reused_legacy_prediction = 0
     generated = 0
     errors = 0
+    rows_to_process: list[dict[str, Any]] = []
 
     for gold_row in gold_rows:
         ex_id = str(gold_row["id"])
         if args.resume and ex_id in existing_rows:
             reused_existing_output += 1
             continue
+        rows_to_process.append(gold_row)
 
+    def process_one(gold_row: dict[str, Any]) -> dict[str, Any]:
+        ex_id = str(gold_row["id"])
         prompt_row = prompt_by_id.get(ex_id)
         if prompt_row is None:
             record = build_output_record(
@@ -402,25 +419,31 @@ def generate_condition(
                 generation_source="missing_prompt",
                 generation_error=f"Missing prompt row for {ex_id} condition={condition}",
             )
-            append_jsonl(out_path, record)
-            errors += 1
-            processed += 1
             if not args.continue_on_error:
                 raise RuntimeError(record["generation_error"])
-            continue
+            return {
+                "record": record,
+                "generation_source": "missing_prompt",
+                "generated": 0,
+                "reused_legacy": 0,
+                "errors": 1,
+            }
 
         generation_source = "backend"
         generation_error = ""
         raw_output = ""
+        generated_inc = 0
+        reused_legacy_inc = 0
+        errors_inc = 0
         try:
             if ex_id in reusable:
                 raw_output = reusable[ex_id]
                 generation_source = "reused_existing_prediction"
-                reused_legacy_prediction += 1
+                reused_legacy_inc = 1
             elif args.dry_run:
                 raw_output = make_dry_run_prediction({"id": ex_id, "baseline": condition})
                 generation_source = "dry_run"
-                generated += 1
+                generated_inc = 1
             else:
                 raw_output, _, _ = request_with_retry(
                     backend=backend,
@@ -432,10 +455,10 @@ def generate_condition(
                     num_predict=num_predict,
                     timeout_seconds=args.timeout_seconds,
                 )
-                generated += 1
+                generated_inc = 1
         except Exception as exc:
             generation_error = f"{exc.__class__.__name__}: {exc}"
-            errors += 1
+            errors_inc = 1
             if not args.continue_on_error:
                 raise
 
@@ -447,12 +470,37 @@ def generate_condition(
             generation_source=generation_source,
             generation_error=generation_error,
         )
+        return {
+            "record": record,
+            "generation_source": generation_source,
+            "generated": generated_inc,
+            "reused_legacy": reused_legacy_inc,
+            "errors": errors_inc,
+        }
+
+    def write_result(result: dict[str, Any], processed_count: int) -> None:
+        nonlocal generated, reused_legacy_prediction, errors
+        record = result["record"]
+        generated += int(result["generated"])
+        reused_legacy_prediction += int(result["reused_legacy"])
+        errors += int(result["errors"])
         append_jsonl(out_path, record)
-        processed += 1
         print(
-            f"[{model} {condition}] {processed}/{len(gold_rows)} {ex_id} source={generation_source}",
+            f"[{model} {condition}] {processed_count}/{len(rows_to_process)} "
+            f"{record.get('example_id', record.get('id', ''))} source={result['generation_source']}",
             file=sys.stderr,
         )
+
+    if args.workers == 1 or len(rows_to_process) <= 1:
+        for gold_row in rows_to_process:
+            processed += 1
+            write_result(process_one(gold_row), processed)
+    else:
+        with ThreadPoolExecutor(max_workers=args.workers) as executor:
+            futures = [executor.submit(process_one, gold_row) for gold_row in rows_to_process]
+            for future in as_completed(futures):
+                processed += 1
+                write_result(future.result(), processed)
 
     return {
         "model": model,
@@ -868,13 +916,14 @@ def write_summary_md(
 ) -> None:
     limit_text = str(args.limit) if args.limit is not None else str(config.get("subset_size", 100))
     num_predict_arg = f" --num-predict {args.num_predict}" if args.num_predict is not None else ""
+    workers_arg = f" --workers {args.workers}" if args.workers != 1 else ""
     smoke_cmd = (
         "python scripts/run_multi_model_r2r.py --limit 10 "
-        f"--output-root results/multi_model_r2r_seed42_smoke10 --resume --continue-on-error{num_predict_arg}"
+        f"--output-root results/multi_model_r2r_seed42_smoke10 --resume --continue-on-error{num_predict_arg}{workers_arg}"
     )
     full_cmd = (
         "python scripts/run_multi_model_r2r.py --output-root results/multi_model_r2r_seed42 "
-        f"--resume --continue-on-error{num_predict_arg}"
+        f"--resume --continue-on-error{num_predict_arg}{workers_arg}"
     )
 
     lines = [
@@ -889,6 +938,7 @@ def write_summary_md(
         f"- Models: {', '.join(models)}",
         f"- Installed Ollama models observed: {', '.join(installed_models) if installed_models else '(not checked)'}",
         f"- Output root: {output_root}",
+        f"- Workers per model/condition: {args.workers}",
         f"- Legacy prediction reuse: {'enabled' if (bool(config.get('reuse_existing_predictions', True)) or args.reuse_legacy_predictions) else 'disabled'}",
     ]
     excluded_models = config.get("excluded_models", {})
@@ -1146,6 +1196,7 @@ def main() -> None:
         "seed": seed,
         "num_predict": num_predict,
         "bootstrap_iters": bootstrap_iters,
+        "workers": args.workers,
         "dry_run": args.dry_run,
         "resume": args.resume,
         "reuse_legacy_predictions": bool(config.get("reuse_existing_predictions", True)) or args.reuse_legacy_predictions,

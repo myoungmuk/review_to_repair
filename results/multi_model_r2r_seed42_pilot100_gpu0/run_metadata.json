@@ -1,0 +1,131 @@
+{
+  "started_at": "2026-05-11T02:56:15.618327+00:00",
+  "config": "/cephfs/lab/2022810001_강명묵/configs/multi_model_r2r_seed42.json",
+  "output_root": "/cephfs/lab/2022810001_강명묵/results/multi_model_r2r_seed42_pilot100_gpu0",
+  "gold_path": "/cephfs/lab/2022810001_강명묵/data/processed/crn_pilot100.jsonl",
+  "prompt_dir": "/cephfs/lab/2022810001_강명묵/prompts/crn_pilot100",
+  "models": [
+    "qwen2.5-coder:7b",
+    "deepseek-coder:6.7b",
+    "codegemma:7b"
+  ],
+  "conditions": [
+    "no_review",
+    "direct",
+    "gold_location"
+  ],
+  "limit": null,
+  "backend": "ollama",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "temperature": 0.0,
+  "seed": 42,
+  "num_predict": 1024,
+  "bootstrap_iters": 1000,
+  "workers": 1,
+  "dry_run": false,
+  "resume": true,
+  "reuse_legacy_predictions": false,
+  "completed_at": "2026-05-11T03:17:54.596729+00:00",
+  "generation_runs": [
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "no_review",
+      "path": "/cephfs/lab/2022810001_강명묵/results/multi_model_r2r_seed42_pilot100_gpu0/generations/qwen2.5-coder-7b/no_review.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 100,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 23
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "direct",
+      "path": "/cephfs/lab/2022810001_강명묵/results/multi_model_r2r_seed42_pilot100_gpu0/generations/qwen2.5-coder-7b/direct.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 100,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 98
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "gold_location",
+      "path": "/cephfs/lab/2022810001_강명묵/results/multi_model_r2r_seed42_pilot100_gpu0/generations/qwen2.5-coder-7b/gold_location.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 100,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 100
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "no_review",
+      "path": "/cephfs/lab/2022810001_강명묵/results/multi_model_r2r_seed42_pilot100_gpu0/generations/deepseek-coder-6.7b/no_review.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 100,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 99
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "direct",
+      "path": "/cephfs/lab/2022810001_강명묵/results/multi_model_r2r_seed42_pilot100_gpu0/generations/deepseek-coder-6.7b/direct.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 65,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 35,
+      "errors": 0,
+      "duplicate_existing_rows": 64
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "gold_location",
+      "path": "/cephfs/lab/2022810001_강명묵/results/multi_model_r2r_seed42_pilot100_gpu0/generations/deepseek-coder-6.7b/gold_location.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "codegemma:7b",
+      "condition": "no_review",
+      "path": "/cephfs/lab/2022810001_강명묵/results/multi_model_r2r_seed42_pilot100_gpu0/generations/codegemma-7b/no_review.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "codegemma:7b",
+      "condition": "direct",
+      "path": "/cephfs/lab/2022810001_강명묵/results/multi_model_r2r_seed42_pilot100_gpu0/generations/codegemma-7b/direct.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "codegemma:7b",
+      "condition": "gold_location",
+      "path": "/cephfs/lab/2022810001_강명묵/results/multi_model_r2r_seed42_pilot100_gpu0/generations/codegemma-7b/gold_location.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    }
+  ],
+  "combined_generations": "/cephfs/lab/2022810001_강명묵/results/multi_model_r2r_seed42_pilot100_gpu0/generations/all_generations.jsonl"
+}

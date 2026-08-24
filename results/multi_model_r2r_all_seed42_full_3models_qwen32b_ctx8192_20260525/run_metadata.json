@@ -1,0 +1,131 @@
+{
+  "started_at": "2026-05-26T00:03:55.621240+00:00",
+  "config": "/cephfs/lab/users/2022810001/review-to-repair01/configs/multi_model_r2r_all_seed42_optimized.json",
+  "output_root": "/cephfs/lab/users/2022810001/review-to-repair01/results/multi_model_r2r_all_seed42_full_3models_qwen32b_ctx8192_20260525",
+  "gold_path": "/cephfs/lab/users/2022810001/review-to-repair01/data/processed/crn_all.jsonl",
+  "prompt_dir": "/cephfs/lab/users/2022810001/review-to-repair01/prompts/crn_all",
+  "models": [
+    "qwen2.5-coder:7b",
+    "deepseek-coder:6.7b",
+    "qwen2.5-coder:32b"
+  ],
+  "conditions": [
+    "no_review",
+    "direct",
+    "gold_location"
+  ],
+  "limit": null,
+  "backend": "ollama",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "temperature": 0.0,
+  "seed": 42,
+  "num_predict": 512,
+  "bootstrap_iters": 1000,
+  "workers": 3,
+  "dry_run": false,
+  "resume": true,
+  "reuse_legacy_predictions": false,
+  "completed_at": "2026-05-26T09:50:18.414096+00:00",
+  "generation_runs": [
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "no_review",
+      "path": "/cephfs/lab/users/2022810001/review-to-repair01/results/multi_model_r2r_all_seed42_full_3models_qwen32b_ctx8192_20260525/generations/qwen2.5-coder-7b/no_review.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 14855,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "direct",
+      "path": "/cephfs/lab/users/2022810001/review-to-repair01/results/multi_model_r2r_all_seed42_full_3models_qwen32b_ctx8192_20260525/generations/qwen2.5-coder-7b/direct.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 14855,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "gold_location",
+      "path": "/cephfs/lab/users/2022810001/review-to-repair01/results/multi_model_r2r_all_seed42_full_3models_qwen32b_ctx8192_20260525/generations/qwen2.5-coder-7b/gold_location.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 14855,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "no_review",
+      "path": "/cephfs/lab/users/2022810001/review-to-repair01/results/multi_model_r2r_all_seed42_full_3models_qwen32b_ctx8192_20260525/generations/deepseek-coder-6.7b/no_review.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 14855,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "direct",
+      "path": "/cephfs/lab/users/2022810001/review-to-repair01/results/multi_model_r2r_all_seed42_full_3models_qwen32b_ctx8192_20260525/generations/deepseek-coder-6.7b/direct.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 14855,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "gold_location",
+      "path": "/cephfs/lab/users/2022810001/review-to-repair01/results/multi_model_r2r_all_seed42_full_3models_qwen32b_ctx8192_20260525/generations/deepseek-coder-6.7b/gold_location.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 14855,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "qwen2.5-coder:32b",
+      "condition": "no_review",
+      "path": "/cephfs/lab/users/2022810001/review-to-repair01/results/multi_model_r2r_all_seed42_full_3models_qwen32b_ctx8192_20260525/generations/qwen2.5-coder-32b/no_review.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 14855,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 0,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "qwen2.5-coder:32b",
+      "condition": "direct",
+      "path": "/cephfs/lab/users/2022810001/review-to-repair01/results/multi_model_r2r_all_seed42_full_3models_qwen32b_ctx8192_20260525/generations/qwen2.5-coder-32b/direct.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 1912,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 12943,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "qwen2.5-coder:32b",
+      "condition": "gold_location",
+      "path": "/cephfs/lab/users/2022810001/review-to-repair01/results/multi_model_r2r_all_seed42_full_3models_qwen32b_ctx8192_20260525/generations/qwen2.5-coder-32b/gold_location.jsonl",
+      "selected_examples": 14855,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 14855,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    }
+  ],
+  "combined_generations": "/cephfs/lab/users/2022810001/review-to-repair01/results/multi_model_r2r_all_seed42_full_3models_qwen32b_ctx8192_20260525/generations/all_generations.jsonl"
+}

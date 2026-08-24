@@ -44,6 +44,25 @@ python3 scripts/bootstrap_gain.py --per-example reports/crn_pilot100_your_llm/pe
 python3 scripts/bootstrap_gain.py --per-example reports/crn_pilot100_your_llm/per_example_metrics.csv --baseline-a direct --baseline-b gold_location --metric exact_match_line_trim --iters 1000 --seed 42
 ```
 
+## GPU 사용 규칙 (필수)
+
+이 환경은 GPU Control Plane이 적용되어 있다. **모든 GPU 작업은 반드시 `gpu-submit`으로 실행해야 한다.**
+
+```bash
+# 올바른 방법
+gpu-submit "python train.py"
+gpu-submit "python run_local_predictions.py ..."
+
+# 금지 — 직접 실행하면 GPU를 볼 수 없음 (CUDA_VISIBLE_DEVICES="")
+python train.py
+srun --gres=gpu:1 ...
+```
+
+- `CUDA_VISIBLE_DEVICES`, `NVIDIA_VISIBLE_DEVICES` 직접 지정 금지
+- 상태 확인: `gpu-submit --list` / `gpu-submit --gpu-status`
+- 작업 취소: `gpu-submit --cancel <job_id>`
+- GPU 할당은 백엔드가 자동 결정하며, 노드/GPU 번호를 직접 지정하지 않는다.
+
 ## Coding rules
 - Prefer small, high-confidence changes.
 - Keep scripts runnable from the repository root.

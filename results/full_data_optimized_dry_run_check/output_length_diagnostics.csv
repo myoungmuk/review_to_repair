@@ -1,0 +1,10 @@
+model,condition,n_output,raw_len_min,raw_len_mean,raw_len_median,raw_len_max,extracted_len_min,extracted_len_mean,extracted_len_median,extracted_len_max,empty_raw_count,empty_extracted_count,very_short_extracted_count,unclosed_code_fence_count,near_num_predict_char_risk_count,suspicious_case_count
+qwen2.5-coder:7b,no_review,2,40,40.0,40.0,40,40,40.0,40.0,40,0,0,0,0,0,0
+qwen2.5-coder:7b,direct,2,37,37.0,37.0,37,37,37.0,37.0,37,0,0,0,0,0,0
+qwen2.5-coder:7b,gold_location,2,44,44.0,44.0,44,44,44.0,44.0,44,0,0,0,0,0,0
+deepseek-coder:6.7b,no_review,2,40,40.0,40.0,40,40,40.0,40.0,40,0,0,0,0,0,0
+deepseek-coder:6.7b,direct,2,37,37.0,37.0,37,37,37.0,37.0,37,0,0,0,0,0,0
+deepseek-coder:6.7b,gold_location,2,44,44.0,44.0,44,44,44.0,44.0,44,0,0,0,0,0,0
+codegemma:7b,no_review,2,40,40.0,40.0,40,40,40.0,40.0,40,0,0,0,0,0,0
+codegemma:7b,direct,2,37,37.0,37.0,37,37,37.0,37.0,37,0,0,0,0,0,0
+codegemma:7b,gold_location,2,44,44.0,44.0,44,44,44.0,44.0,44,0,0,0,0,0,0

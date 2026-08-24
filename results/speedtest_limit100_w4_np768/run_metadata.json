@@ -1,0 +1,131 @@
+{
+  "started_at": "2026-04-29T07:48:43.630706+00:00",
+  "config": "/home/selab/2026/review_to_repair_crn/configs/multi_model_r2r_all_seed42_optimized.json",
+  "output_root": "/home/selab/2026/review_to_repair_crn/results/speedtest_limit100_w4_np768",
+  "gold_path": "/home/selab/2026/review_to_repair_crn/data/processed/crn_all.jsonl",
+  "prompt_dir": "/home/selab/2026/review_to_repair_crn/prompts/crn_all",
+  "models": [
+    "qwen2.5-coder:7b",
+    "deepseek-coder:6.7b",
+    "codegemma:7b"
+  ],
+  "conditions": [
+    "no_review",
+    "direct",
+    "gold_location"
+  ],
+  "limit": 100,
+  "backend": "ollama",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "temperature": 0.0,
+  "seed": 42,
+  "num_predict": 768,
+  "bootstrap_iters": 1000,
+  "workers": 4,
+  "dry_run": false,
+  "resume": true,
+  "reuse_legacy_predictions": false,
+  "completed_at": "2026-04-29T07:54:14.514995+00:00",
+  "generation_runs": [
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "no_review",
+      "path": "/home/selab/2026/review_to_repair_crn/results/speedtest_limit100_w4_np768/generations/qwen2.5-coder-7b/no_review.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "direct",
+      "path": "/home/selab/2026/review_to_repair_crn/results/speedtest_limit100_w4_np768/generations/qwen2.5-coder-7b/direct.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "condition": "gold_location",
+      "path": "/home/selab/2026/review_to_repair_crn/results/speedtest_limit100_w4_np768/generations/qwen2.5-coder-7b/gold_location.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "no_review",
+      "path": "/home/selab/2026/review_to_repair_crn/results/speedtest_limit100_w4_np768/generations/deepseek-coder-6.7b/no_review.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "direct",
+      "path": "/home/selab/2026/review_to_repair_crn/results/speedtest_limit100_w4_np768/generations/deepseek-coder-6.7b/direct.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "deepseek-coder:6.7b",
+      "condition": "gold_location",
+      "path": "/home/selab/2026/review_to_repair_crn/results/speedtest_limit100_w4_np768/generations/deepseek-coder-6.7b/gold_location.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "codegemma:7b",
+      "condition": "no_review",
+      "path": "/home/selab/2026/review_to_repair_crn/results/speedtest_limit100_w4_np768/generations/codegemma-7b/no_review.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "codegemma:7b",
+      "condition": "direct",
+      "path": "/home/selab/2026/review_to_repair_crn/results/speedtest_limit100_w4_np768/generations/codegemma-7b/direct.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    },
+    {
+      "model": "codegemma:7b",
+      "condition": "gold_location",
+      "path": "/home/selab/2026/review_to_repair_crn/results/speedtest_limit100_w4_np768/generations/codegemma-7b/gold_location.jsonl",
+      "selected_examples": 100,
+      "existing_rows_reused": 0,
+      "legacy_predictions_reused": 0,
+      "backend_generations": 100,
+      "errors": 0,
+      "duplicate_existing_rows": 0
+    }
+  ],
+  "combined_generations": "/home/selab/2026/review_to_repair_crn/results/speedtest_limit100_w4_np768/generations/all_generations.jsonl"
+}

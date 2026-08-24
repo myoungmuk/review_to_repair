@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-06-01T06:01:59.958159+00:00",
+  "sample_size": 3,
+  "seed": 42,
+  "processed_path": "data/processed/crn_all.jsonl",
+  "raw_path": "data_raw/data_new/codereview_new.jsonl",
+  "counts": {
+    "metadata_present": 3,
+    "path_available": 3,
+    "old_exact_match_any_ref": 0,
+    "old_exact_unique_any_ref": 0,
+    "old_trimmed_match_any_ref": 0,
+    "old_plain_exact_match_any_ref": 1,
+    "old_plain_exact_unique_any_ref": 1,
+    "old_plain_trimmed_match_any_ref": 1,
+    "new_exact_match_any_ref": 0,
+    "new_trimmed_match_any_ref": 0,
+    "new_plain_exact_match_any_ref": 1,
+    "new_plain_trimmed_match_any_ref": 1,
+    "prediction_patch_feasible_by_exact_old": 0,
+    "prediction_patch_feasible_by_plain_old": 1
+  },
+  "review_status_counts": {
+    "200": 3
+  },
+  "raw_fetch_success_distribution": {
+    "3": 3
+  },
+  "language_counts": {
+    "r": 2,
+    "java": 1
+  },
+  "by_language": {
+    "java": {
+      "n": 1,
+      "path_available": 1,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 0,
+      "prediction_patch_feasible": 0
+    },
+    "r": {
+      "n": 2,
+      "path_available": 2,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 1,
+      "prediction_patch_feasible": 1
+    }
+  }
+}

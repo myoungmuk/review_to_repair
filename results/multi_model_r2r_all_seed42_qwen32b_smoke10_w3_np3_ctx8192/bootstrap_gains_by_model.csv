@@ -1,0 +1,9 @@
+model,comparison,metric,paired_n,gain,gain_pct,ci95_low,ci95_high,ci95_low_pct,ci95_high_pct
+qwen2.5-coder:32b,direct - no_review,exact_match_line_trim,10,0.2,20.0,0.0,0.5,0.0,50.0
+qwen2.5-coder:32b,direct - no_review,location_overlap_f1,10,0.052174375332270095,5.2174375332270095,-0.27786337054758103,0.3806262626262626,-27.786337054758103,38.06262626262626
+qwen2.5-coder:32b,gold_location - direct,exact_match_line_trim,10,-0.1,-10.0,-0.3,0.0,-30.0,0.0
+qwen2.5-coder:32b,gold_location - direct,location_overlap_f1,10,0.1090909090909091,10.90909090909091,-0.22666666666666666,0.4093181818181816,-22.666666666666664,40.93181818181816
+macro_average,direct - no_review,exact_match_line_trim,10,0.2,20.0,0.0,0.5,0.0,50.0
+macro_average,direct - no_review,location_overlap_f1,10,0.052174375332270095,5.2174375332270095,-0.27786337054758103,0.3806262626262626,-27.786337054758103,38.06262626262626
+macro_average,gold_location - direct,exact_match_line_trim,10,-0.1,-10.0,-0.3,0.0,-30.0,0.0
+macro_average,gold_location - direct,location_overlap_f1,10,0.1090909090909091,10.90909090909091,-0.22666666666666666,0.4093181818181816,-22.666666666666664,40.93181818181816

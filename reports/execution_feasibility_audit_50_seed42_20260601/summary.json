@@ -1,0 +1,134 @@
+{
+  "created_utc": "2026-06-01T06:03:23.765782+00:00",
+  "sample_size": 50,
+  "seed": 42,
+  "processed_path": "data/processed/crn_all.jsonl",
+  "raw_path": "data_raw/data_new/codereview_new.jsonl",
+  "counts": {
+    "metadata_present": 50,
+    "path_available": 43,
+    "old_exact_match_any_ref": 0,
+    "old_exact_unique_any_ref": 0,
+    "old_trimmed_match_any_ref": 0,
+    "old_plain_exact_match_any_ref": 4,
+    "old_plain_exact_unique_any_ref": 4,
+    "old_plain_trimmed_match_any_ref": 4,
+    "new_exact_match_any_ref": 0,
+    "new_trimmed_match_any_ref": 0,
+    "new_plain_exact_match_any_ref": 4,
+    "new_plain_trimmed_match_any_ref": 4,
+    "prediction_patch_feasible_by_exact_old": 0,
+    "prediction_patch_feasible_by_plain_old": 4
+  },
+  "review_status_counts": {
+    "200": 43,
+    "404": 1,
+    "451": 1,
+    "403": 5
+  },
+  "raw_fetch_success_distribution": {
+    "3": 31,
+    "2": 12,
+    "0": 7
+  },
+  "language_counts": {
+    "r": 3,
+    "java": 5,
+    "go": 11,
+    "python": 7,
+    "csharp": 3,
+    "cpp": 4,
+    "swift": 2,
+    "ruby": 3,
+    "kotlin": 6,
+    "c": 3,
+    "scala": 2,
+    "javascript": 1
+  },
+  "by_language": {
+    "c": {
+      "n": 3,
+      "path_available": 3,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 1,
+      "prediction_patch_feasible": 1
+    },
+    "cpp": {
+      "n": 4,
+      "path_available": 4,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 0,
+      "prediction_patch_feasible": 0
+    },
+    "csharp": {
+      "n": 3,
+      "path_available": 3,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 0,
+      "prediction_patch_feasible": 0
+    },
+    "go": {
+      "n": 11,
+      "path_available": 9,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 0,
+      "prediction_patch_feasible": 0
+    },
+    "java": {
+      "n": 5,
+      "path_available": 5,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 2,
+      "prediction_patch_feasible": 2
+    },
+    "javascript": {
+      "n": 1,
+      "path_available": 1,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 0,
+      "prediction_patch_feasible": 0
+    },
+    "kotlin": {
+      "n": 6,
+      "path_available": 3,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 0,
+      "prediction_patch_feasible": 0
+    },
+    "python": {
+      "n": 7,
+      "path_available": 7,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 0,
+      "prediction_patch_feasible": 0
+    },
+    "r": {
+      "n": 3,
+      "path_available": 3,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 1,
+      "prediction_patch_feasible": 1
+    },
+    "ruby": {
+      "n": 3,
+      "path_available": 2,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 0,
+      "prediction_patch_feasible": 0
+    },
+    "scala": {
+      "n": 2,
+      "path_available": 2,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 0,
+      "prediction_patch_feasible": 0
+    },
+    "swift": {
+      "n": 2,
+      "path_available": 1,
+      "old_exact_unique": 0,
+      "plain_old_exact_unique": 0,
+      "prediction_patch_feasible": 0
+    }
+  }
+}

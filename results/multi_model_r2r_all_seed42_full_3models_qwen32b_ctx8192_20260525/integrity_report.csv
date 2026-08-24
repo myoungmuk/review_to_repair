@@ -1,0 +1,10 @@
+model,condition,expected_count,output_count,missing_example_id_count,duplicate_example_id_count,generation_error_count,extraction_failure_count,evaluation_failure_count,valid_evaluation_count
+qwen2.5-coder:7b,no_review,14855,14855,0,0,0,0,0,14855
+qwen2.5-coder:7b,direct,14855,14855,0,0,0,0,0,14855
+qwen2.5-coder:7b,gold_location,14855,14855,0,0,0,0,0,14855
+deepseek-coder:6.7b,no_review,14855,14855,0,0,0,0,0,14855
+deepseek-coder:6.7b,direct,14855,14855,0,0,0,0,0,14855
+deepseek-coder:6.7b,gold_location,14855,14855,0,0,0,0,0,14855
+qwen2.5-coder:32b,no_review,14855,14855,0,0,0,0,0,14855
+qwen2.5-coder:32b,direct,14855,14855,0,0,0,0,0,14855
+qwen2.5-coder:32b,gold_location,14855,14855,0,0,0,0,0,14855

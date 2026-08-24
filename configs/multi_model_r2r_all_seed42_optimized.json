@@ -1,0 +1,50 @@
+{
+  "run_name": "multi_model_r2r_all_seed42_optimized",
+  "benchmark": "CodeReview-New",
+  "gold_path": "data/processed/crn_all.jsonl",
+  "prompt_dir": "prompts/crn_all",
+  "subset_size": 14855,
+  "seed": 42,
+  "conditions": ["no_review", "direct", "gold_location"],
+  "metrics": ["exact_match_line_trim", "location_overlap_f1"],
+  "backend": "ollama",
+  "temperature": 0.0,
+  "bootstrap_iters": 1000,
+  "reuse_existing_predictions": false,
+  "default_model_selection": [
+    {
+      "label": "current_qwen",
+      "required": true,
+      "candidates": ["qwen2.5-coder:7b"],
+      "install_hint": "ollama pull qwen2.5-coder:7b"
+    },
+    {
+      "label": "deepseek_coder_6_7b_or_7b",
+      "required": true,
+      "candidates": ["deepseek-coder:6.7b", "deepseek-coder:7b"],
+      "install_hint": "ollama pull deepseek-coder:6.7b"
+    },
+    {
+      "label": "codegemma_7b",
+      "required": true,
+      "candidates": ["codegemma:7b"],
+      "install_hint": "ollama pull codegemma:7b"
+    }
+  ],
+  "fallback_candidates_not_for_main_full_run": [
+    {
+      "label": "fallback_if_codegemma_unavailable",
+      "candidates": ["qwen2.5-coder:3b"],
+      "note": "Installed fallback candidate only. Do not use in the main full run unless explicitly approved."
+    }
+  ],
+  "excluded_models": {
+    "starcoder2:7b": "excluded due to empty outputs under current Ollama chat backend"
+  },
+  "notes": [
+    "Full-data variant of the seed=42 multi-model Review-to-Repair diagnostic.",
+    "The original no_review/direct/gold_location definitions are unchanged.",
+    "This config targets the 14,855 CodeReview-New rows that contain required old/review/new fields after preprocessing.",
+    "Use the runner's --workers option for controlled request-level parallelism on large local GPUs."
+  ]
+}

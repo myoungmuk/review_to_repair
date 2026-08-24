@@ -1,0 +1,10 @@
+model,condition,expected_count,output_count,missing_example_id_count,duplicate_example_id_count,generation_error_count,extraction_failure_count,evaluation_failure_count,valid_evaluation_count
+qwen2.5-coder:7b,no_review,2,2,0,0,0,0,0,2
+qwen2.5-coder:7b,direct,2,2,0,0,0,0,0,2
+qwen2.5-coder:7b,gold_location,2,2,0,0,0,0,0,2
+deepseek-coder:6.7b,no_review,2,2,0,0,0,0,0,2
+deepseek-coder:6.7b,direct,2,2,0,0,0,0,0,2
+deepseek-coder:6.7b,gold_location,2,2,0,0,0,0,0,2
+codegemma:7b,no_review,2,2,0,0,0,0,0,2
+codegemma:7b,direct,2,2,0,0,0,0,0,2
+codegemma:7b,gold_location,2,2,0,0,0,0,0,2

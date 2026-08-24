@@ -1,0 +1,609 @@
+[qwen2.5-coder:7b no_review] 1/100 crn-005287 source=backend
+[qwen2.5-coder:7b no_review] 2/100 crn-011737 source=backend
+[qwen2.5-coder:7b no_review] 3/100 crn-002932 source=backend
+[qwen2.5-coder:7b no_review] 4/100 crn-002192 source=backend
+[qwen2.5-coder:7b no_review] 5/100 crn-006232 source=backend
+[qwen2.5-coder:7b no_review] 6/100 crn-011391 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 7/100 crn-002686 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 8/100 crn-004518 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 9/100 crn-003358 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 10/100 crn-008823 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 11/100 crn-006784 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 12/100 crn-013905 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 13/100 crn-002938 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 14/100 crn-000862 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 15/100 crn-006421 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 16/100 crn-000801 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 17/100 crn-009395 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 18/100 crn-004543 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 19/100 crn-006291 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 20/100 crn-000798 source=backend
+[qwen2.5-coder:7b no_review] 21/100 crn-011089 source=backend
+[qwen2.5-coder:7b no_review] 22/100 crn-000744 source=backend
+[qwen2.5-coder:7b no_review] 23/100 crn-001241 source=backend
+[qwen2.5-coder:7b no_review] 24/100 crn-009360 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 25/100 crn-005359 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 26/100 crn-002326 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 27/100 crn-006510 source=backend
+[qwen2.5-coder:7b no_review] 28/100 crn-005332 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 29/100 crn-009549 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 30/100 crn-009507 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 31/100 crn-014335 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 32/100 crn-000352 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 33/100 crn-009965 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 34/100 crn-001766 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 35/100 crn-006094 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 36/100 crn-003831 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 37/100 crn-002447 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 38/100 crn-005935 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 39/100 crn-003340 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 40/100 crn-006141 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 41/100 crn-010983 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 42/100 crn-002782 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 43/100 crn-000938 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 44/100 crn-012022 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 45/100 crn-006672 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 46/100 crn-002936 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 47/100 crn-001592 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 48/100 crn-012114 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 49/100 crn-009143 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 50/100 crn-007430 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 51/100 crn-008317 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 52/100 crn-005837 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 53/100 crn-005987 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 54/100 crn-004034 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 55/100 crn-013498 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 56/100 crn-008596 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 57/100 crn-004704 source=backend
+[qwen2.5-coder:7b no_review] 58/100 crn-000658 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 59/100 crn-002953 source=backend
+[qwen2.5-coder:7b no_review] 60/100 crn-008903 source=backend
+[qwen2.5-coder:7b no_review] 61/100 crn-008014 source=backend
+[qwen2.5-coder:7b no_review] 62/100 crn-006483 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 63/100 crn-002912 source=backend
+[qwen2.5-coder:7b no_review] 64/100 crn-011602 source=backend
+[qwen2.5-coder:7b no_review] 65/100 crn-003000 source=backend
+[qwen2.5-coder:7b no_review] 66/100 crn-008292 source=backend
+[qwen2.5-coder:7b no_review] 67/100 crn-006652 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 68/100 crn-002438 source=backend
+[qwen2.5-coder:7b no_review] 69/100 crn-004798 source=backend
+[qwen2.5-coder:7b no_review] 70/100 crn-002193 source=backend
+[qwen2.5-coder:7b no_review] 71/100 crn-007113 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 72/100 crn-008421 source=backend
+Transient local-backend error on attempt 1; retrying in 1.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 2; retrying in 2.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+Transient local-backend error on attempt 3; retrying in 4.0s: Could not reach local backend at http://127.0.0.1:11434/api/chat: [Errno 111] Connection refused
+[qwen2.5-coder:7b no_review] 73/100 crn-002947 source=backend
+[qwen2.5-coder:7b no_review] 74/100 crn-014837 source=backend
+[qwen2.5-coder:7b no_review] 75/100 crn-010330 source=backend
+[qwen2.5-coder:7b no_review] 76/100 crn-000953 source=backend
+[qwen2.5-coder:7b no_review] 77/100 crn-013469 source=backend
+[qwen2.5-coder:7b no_review] 78/100 crn-010241 source=backend
+[qwen2.5-coder:7b no_review] 79/100 crn-007789 source=backend
+[qwen2.5-coder:7b no_review] 80/100 crn-013776 source=backend
+[qwen2.5-coder:7b no_review] 81/100 crn-002553 source=backend
+[qwen2.5-coder:7b no_review] 82/100 crn-009938 source=backend
+[qwen2.5-coder:7b no_review] 83/100 crn-009318 source=backend
+[qwen2.5-coder:7b no_review] 84/100 crn-009293 source=backend
+[qwen2.5-coder:7b no_review] 85/100 crn-000654 source=backend
+[qwen2.5-coder:7b no_review] 86/100 crn-000126 source=backend
+[qwen2.5-coder:7b no_review] 87/100 crn-012856 source=backend
+[qwen2.5-coder:7b no_review] 88/100 crn-010305 source=backend
+[qwen2.5-coder:7b no_review] 89/100 crn-009519 source=backend
+[qwen2.5-coder:7b no_review] 90/100 crn-012176 source=backend
+[qwen2.5-coder:7b no_review] 91/100 crn-002868 source=backend
+[qwen2.5-coder:7b no_review] 92/100 crn-009462 source=backend
+[qwen2.5-coder:7b no_review] 93/100 crn-002916 source=backend
+[qwen2.5-coder:7b no_review] 94/100 crn-007657 source=backend
+[qwen2.5-coder:7b no_review] 95/100 crn-012852 source=backend
+[qwen2.5-coder:7b no_review] 96/100 crn-013258 source=backend
+[qwen2.5-coder:7b no_review] 97/100 crn-012033 source=backend
+[qwen2.5-coder:7b no_review] 98/100 crn-007196 source=backend
+[qwen2.5-coder:7b no_review] 99/100 crn-011907 source=backend
+[qwen2.5-coder:7b no_review] 100/100 crn-014505 source=backend
+[qwen2.5-coder:7b direct] 1/100 crn-005287 source=backend
+[qwen2.5-coder:7b direct] 2/100 crn-011737 source=backend
+[qwen2.5-coder:7b direct] 3/100 crn-002932 source=backend
+[qwen2.5-coder:7b direct] 4/100 crn-002192 source=backend
+[qwen2.5-coder:7b direct] 5/100 crn-006232 source=backend
+[qwen2.5-coder:7b direct] 6/100 crn-011391 source=backend
+[qwen2.5-coder:7b direct] 7/100 crn-002686 source=backend
+[qwen2.5-coder:7b direct] 8/100 crn-004518 source=backend
+[qwen2.5-coder:7b direct] 9/100 crn-003358 source=backend
+[qwen2.5-coder:7b direct] 10/100 crn-008823 source=backend
+[qwen2.5-coder:7b direct] 11/100 crn-006784 source=backend
+[qwen2.5-coder:7b direct] 12/100 crn-013905 source=backend
+[qwen2.5-coder:7b direct] 13/100 crn-002938 source=backend
+[qwen2.5-coder:7b direct] 14/100 crn-000862 source=backend
+[qwen2.5-coder:7b direct] 15/100 crn-006421 source=backend
+[qwen2.5-coder:7b direct] 16/100 crn-000801 source=backend
+[qwen2.5-coder:7b direct] 17/100 crn-009395 source=backend
+[qwen2.5-coder:7b direct] 18/100 crn-004543 source=backend
+[qwen2.5-coder:7b direct] 19/100 crn-006291 source=backend
+[qwen2.5-coder:7b direct] 20/100 crn-000798 source=backend
+[qwen2.5-coder:7b direct] 21/100 crn-011089 source=backend
+[qwen2.5-coder:7b direct] 22/100 crn-000744 source=backend
+[qwen2.5-coder:7b direct] 23/100 crn-001241 source=backend
+[qwen2.5-coder:7b direct] 24/100 crn-009360 source=backend
+[qwen2.5-coder:7b direct] 25/100 crn-005359 source=backend
+[qwen2.5-coder:7b direct] 26/100 crn-002326 source=backend
+[qwen2.5-coder:7b direct] 27/100 crn-006510 source=backend
+[qwen2.5-coder:7b direct] 28/100 crn-005332 source=backend
+[qwen2.5-coder:7b direct] 29/100 crn-009549 source=backend
+[qwen2.5-coder:7b direct] 30/100 crn-009507 source=backend
+[qwen2.5-coder:7b direct] 31/100 crn-014335 source=backend
+[qwen2.5-coder:7b direct] 32/100 crn-000352 source=backend
+[qwen2.5-coder:7b direct] 33/100 crn-009965 source=backend
+[qwen2.5-coder:7b direct] 34/100 crn-001766 source=backend
+[qwen2.5-coder:7b direct] 35/100 crn-006094 source=backend
+[qwen2.5-coder:7b direct] 36/100 crn-003831 source=backend
+[qwen2.5-coder:7b direct] 37/100 crn-002447 source=backend
+[qwen2.5-coder:7b direct] 38/100 crn-005935 source=backend
+[qwen2.5-coder:7b direct] 39/100 crn-003340 source=backend
+[qwen2.5-coder:7b direct] 40/100 crn-006141 source=backend
+[qwen2.5-coder:7b direct] 41/100 crn-010983 source=backend
+[qwen2.5-coder:7b direct] 42/100 crn-002782 source=backend
+[qwen2.5-coder:7b direct] 43/100 crn-000938 source=backend
+[qwen2.5-coder:7b direct] 44/100 crn-012022 source=backend
+[qwen2.5-coder:7b direct] 45/100 crn-006672 source=backend
+[qwen2.5-coder:7b direct] 46/100 crn-002936 source=backend
+[qwen2.5-coder:7b direct] 47/100 crn-001592 source=backend
+[qwen2.5-coder:7b direct] 48/100 crn-012114 source=backend
+[qwen2.5-coder:7b direct] 49/100 crn-009143 source=backend
+[qwen2.5-coder:7b direct] 50/100 crn-007430 source=backend
+[qwen2.5-coder:7b direct] 51/100 crn-008317 source=backend
+[qwen2.5-coder:7b direct] 52/100 crn-005837 source=backend
+[qwen2.5-coder:7b direct] 53/100 crn-005987 source=backend
+[qwen2.5-coder:7b direct] 54/100 crn-004034 source=backend
+[qwen2.5-coder:7b direct] 55/100 crn-013498 source=backend
+[qwen2.5-coder:7b direct] 56/100 crn-008596 source=backend
+[qwen2.5-coder:7b direct] 57/100 crn-004704 source=backend
+[qwen2.5-coder:7b direct] 58/100 crn-000658 source=backend
+[qwen2.5-coder:7b direct] 59/100 crn-002953 source=backend
+[qwen2.5-coder:7b direct] 60/100 crn-008903 source=backend
+[qwen2.5-coder:7b direct] 61/100 crn-008014 source=backend
+[qwen2.5-coder:7b direct] 62/100 crn-006483 source=backend
+[qwen2.5-coder:7b direct] 63/100 crn-002912 source=backend
+[qwen2.5-coder:7b direct] 64/100 crn-011602 source=backend
+[qwen2.5-coder:7b direct] 65/100 crn-003000 source=backend
+[qwen2.5-coder:7b direct] 66/100 crn-008292 source=backend
+[qwen2.5-coder:7b direct] 67/100 crn-006652 source=backend
+[qwen2.5-coder:7b direct] 68/100 crn-002438 source=backend
+[qwen2.5-coder:7b direct] 69/100 crn-004798 source=backend
+[qwen2.5-coder:7b direct] 70/100 crn-002193 source=backend
+[qwen2.5-coder:7b direct] 71/100 crn-007113 source=backend
+[qwen2.5-coder:7b direct] 72/100 crn-008421 source=backend
+[qwen2.5-coder:7b direct] 73/100 crn-002947 source=backend
+[qwen2.5-coder:7b direct] 74/100 crn-014837 source=backend
+[qwen2.5-coder:7b direct] 75/100 crn-010330 source=backend
+[qwen2.5-coder:7b direct] 76/100 crn-000953 source=backend
+[qwen2.5-coder:7b direct] 77/100 crn-013469 source=backend
+[qwen2.5-coder:7b direct] 78/100 crn-010241 source=backend
+[qwen2.5-coder:7b direct] 79/100 crn-007789 source=backend
+[qwen2.5-coder:7b direct] 80/100 crn-013776 source=backend
+[qwen2.5-coder:7b direct] 81/100 crn-002553 source=backend
+[qwen2.5-coder:7b direct] 82/100 crn-009938 source=backend
+[qwen2.5-coder:7b direct] 83/100 crn-009318 source=backend
+[qwen2.5-coder:7b direct] 84/100 crn-009293 source=backend
+[qwen2.5-coder:7b direct] 85/100 crn-000654 source=backend
+[qwen2.5-coder:7b direct] 86/100 crn-000126 source=backend
+[qwen2.5-coder:7b direct] 87/100 crn-012856 source=backend
+[qwen2.5-coder:7b direct] 88/100 crn-010305 source=backend
+[qwen2.5-coder:7b direct] 89/100 crn-009519 source=backend
+[qwen2.5-coder:7b direct] 90/100 crn-012176 source=backend
+[qwen2.5-coder:7b direct] 91/100 crn-002868 source=backend
+[qwen2.5-coder:7b direct] 92/100 crn-009462 source=backend
+[qwen2.5-coder:7b direct] 93/100 crn-002916 source=backend
+[qwen2.5-coder:7b direct] 94/100 crn-007657 source=backend
+[qwen2.5-coder:7b direct] 95/100 crn-012852 source=backend
+[qwen2.5-coder:7b direct] 96/100 crn-013258 source=backend
+[qwen2.5-coder:7b direct] 97/100 crn-012033 source=backend
+[qwen2.5-coder:7b direct] 98/100 crn-007196 source=backend
+[qwen2.5-coder:7b direct] 99/100 crn-011907 source=backend
+[qwen2.5-coder:7b direct] 100/100 crn-014505 source=backend
+[qwen2.5-coder:7b gold_location] 1/100 crn-005287 source=backend
+[qwen2.5-coder:7b gold_location] 2/100 crn-011737 source=backend
+[qwen2.5-coder:7b gold_location] 3/100 crn-002932 source=backend
+[qwen2.5-coder:7b gold_location] 4/100 crn-002192 source=backend
+[qwen2.5-coder:7b gold_location] 5/100 crn-006232 source=backend
+[qwen2.5-coder:7b gold_location] 6/100 crn-011391 source=backend
+[qwen2.5-coder:7b gold_location] 7/100 crn-002686 source=backend
+[qwen2.5-coder:7b gold_location] 8/100 crn-004518 source=backend
+[qwen2.5-coder:7b gold_location] 9/100 crn-003358 source=backend
+[qwen2.5-coder:7b gold_location] 10/100 crn-008823 source=backend
+[qwen2.5-coder:7b gold_location] 11/100 crn-006784 source=backend
+[qwen2.5-coder:7b gold_location] 12/100 crn-013905 source=backend
+[qwen2.5-coder:7b gold_location] 13/100 crn-002938 source=backend
+[qwen2.5-coder:7b gold_location] 14/100 crn-000862 source=backend
+[qwen2.5-coder:7b gold_location] 15/100 crn-006421 source=backend
+[qwen2.5-coder:7b gold_location] 16/100 crn-000801 source=backend
+[qwen2.5-coder:7b gold_location] 17/100 crn-009395 source=backend
+[qwen2.5-coder:7b gold_location] 18/100 crn-004543 source=backend
+[qwen2.5-coder:7b gold_location] 19/100 crn-006291 source=backend
+[qwen2.5-coder:7b gold_location] 20/100 crn-000798 source=backend
+[qwen2.5-coder:7b gold_location] 21/100 crn-011089 source=backend
+[qwen2.5-coder:7b gold_location] 22/100 crn-000744 source=backend
+[qwen2.5-coder:7b gold_location] 23/100 crn-001241 source=backend
+[qwen2.5-coder:7b gold_location] 24/100 crn-009360 source=backend
+[qwen2.5-coder:7b gold_location] 25/100 crn-005359 source=backend
+[qwen2.5-coder:7b gold_location] 26/100 crn-002326 source=backend
+[qwen2.5-coder:7b gold_location] 27/100 crn-006510 source=backend
+[qwen2.5-coder:7b gold_location] 28/100 crn-005332 source=backend
+[qwen2.5-coder:7b gold_location] 29/100 crn-009549 source=backend
+[qwen2.5-coder:7b gold_location] 30/100 crn-009507 source=backend
+[qwen2.5-coder:7b gold_location] 31/100 crn-014335 source=backend
+[qwen2.5-coder:7b gold_location] 32/100 crn-000352 source=backend
+[qwen2.5-coder:7b gold_location] 33/100 crn-009965 source=backend
+[qwen2.5-coder:7b gold_location] 34/100 crn-001766 source=backend
+[qwen2.5-coder:7b gold_location] 35/100 crn-006094 source=backend
+[qwen2.5-coder:7b gold_location] 36/100 crn-003831 source=backend
+[qwen2.5-coder:7b gold_location] 37/100 crn-002447 source=backend
+[qwen2.5-coder:7b gold_location] 38/100 crn-005935 source=backend
+[qwen2.5-coder:7b gold_location] 39/100 crn-003340 source=backend
+[qwen2.5-coder:7b gold_location] 40/100 crn-006141 source=backend
+[qwen2.5-coder:7b gold_location] 41/100 crn-010983 source=backend
+[qwen2.5-coder:7b gold_location] 42/100 crn-002782 source=backend
+[qwen2.5-coder:7b gold_location] 43/100 crn-000938 source=backend
+[qwen2.5-coder:7b gold_location] 44/100 crn-012022 source=backend
+[qwen2.5-coder:7b gold_location] 45/100 crn-006672 source=backend
+[qwen2.5-coder:7b gold_location] 46/100 crn-002936 source=backend
+[qwen2.5-coder:7b gold_location] 47/100 crn-001592 source=backend
+[qwen2.5-coder:7b gold_location] 48/100 crn-012114 source=backend
+[qwen2.5-coder:7b gold_location] 49/100 crn-009143 source=backend
+[qwen2.5-coder:7b gold_location] 50/100 crn-007430 source=backend
+[qwen2.5-coder:7b gold_location] 51/100 crn-008317 source=backend
+[qwen2.5-coder:7b gold_location] 52/100 crn-005837 source=backend
+[qwen2.5-coder:7b gold_location] 53/100 crn-005987 source=backend
+[qwen2.5-coder:7b gold_location] 54/100 crn-004034 source=backend
+[qwen2.5-coder:7b gold_location] 55/100 crn-013498 source=backend
+[qwen2.5-coder:7b gold_location] 56/100 crn-008596 source=backend
+[qwen2.5-coder:7b gold_location] 57/100 crn-004704 source=backend
+[qwen2.5-coder:7b gold_location] 58/100 crn-000658 source=backend
+[qwen2.5-coder:7b gold_location] 59/100 crn-002953 source=backend
+[qwen2.5-coder:7b gold_location] 60/100 crn-008903 source=backend
+[qwen2.5-coder:7b gold_location] 61/100 crn-008014 source=backend
+[qwen2.5-coder:7b gold_location] 62/100 crn-006483 source=backend
+[qwen2.5-coder:7b gold_location] 63/100 crn-002912 source=backend
+[qwen2.5-coder:7b gold_location] 64/100 crn-011602 source=backend
+[qwen2.5-coder:7b gold_location] 65/100 crn-003000 source=backend
+[qwen2.5-coder:7b gold_location] 66/100 crn-008292 source=backend
+[qwen2.5-coder:7b gold_location] 67/100 crn-006652 source=backend
+[qwen2.5-coder:7b gold_location] 68/100 crn-002438 source=backend
+[qwen2.5-coder:7b gold_location] 69/100 crn-004798 source=backend
+[qwen2.5-coder:7b gold_location] 70/100 crn-002193 source=backend
+[qwen2.5-coder:7b gold_location] 71/100 crn-007113 source=backend
+[qwen2.5-coder:7b gold_location] 72/100 crn-008421 source=backend
+[qwen2.5-coder:7b gold_location] 73/100 crn-002947 source=backend
+[qwen2.5-coder:7b gold_location] 74/100 crn-014837 source=backend
+[qwen2.5-coder:7b gold_location] 75/100 crn-010330 source=backend
+[qwen2.5-coder:7b gold_location] 76/100 crn-000953 source=backend
+[qwen2.5-coder:7b gold_location] 77/100 crn-013469 source=backend
+[qwen2.5-coder:7b gold_location] 78/100 crn-010241 source=backend
+[qwen2.5-coder:7b gold_location] 79/100 crn-007789 source=backend
+[qwen2.5-coder:7b gold_location] 80/100 crn-013776 source=backend
+[qwen2.5-coder:7b gold_location] 81/100 crn-002553 source=backend
+[qwen2.5-coder:7b gold_location] 82/100 crn-009938 source=backend
+[qwen2.5-coder:7b gold_location] 83/100 crn-009318 source=backend
+[qwen2.5-coder:7b gold_location] 84/100 crn-009293 source=backend
+[qwen2.5-coder:7b gold_location] 85/100 crn-000654 source=backend
+[qwen2.5-coder:7b gold_location] 86/100 crn-000126 source=backend
+[qwen2.5-coder:7b gold_location] 87/100 crn-012856 source=backend
+[qwen2.5-coder:7b gold_location] 88/100 crn-010305 source=backend
+[qwen2.5-coder:7b gold_location] 89/100 crn-009519 source=backend
+[qwen2.5-coder:7b gold_location] 90/100 crn-012176 source=backend
+[qwen2.5-coder:7b gold_location] 91/100 crn-002868 source=backend
+[qwen2.5-coder:7b gold_location] 92/100 crn-009462 source=backend
+[qwen2.5-coder:7b gold_location] 93/100 crn-002916 source=backend
+[qwen2.5-coder:7b gold_location] 94/100 crn-007657 source=backend
+[qwen2.5-coder:7b gold_location] 95/100 crn-012852 source=backend
+[qwen2.5-coder:7b gold_location] 96/100 crn-013258 source=backend
+[qwen2.5-coder:7b gold_location] 97/100 crn-012033 source=backend
+[qwen2.5-coder:7b gold_location] 98/100 crn-007196 source=backend
+[qwen2.5-coder:7b gold_location] 99/100 crn-011907 source=backend
+[qwen2.5-coder:7b gold_location] 100/100 crn-014505 source=backend
+[deepseek-coder:6.7b no_review] 1/100 crn-005287 source=backend
+[deepseek-coder:6.7b no_review] 2/100 crn-011737 source=backend
+[deepseek-coder:6.7b no_review] 3/100 crn-002932 source=backend
+[deepseek-coder:6.7b no_review] 4/100 crn-002192 source=backend
+[deepseek-coder:6.7b no_review] 5/100 crn-006232 source=backend
+[deepseek-coder:6.7b no_review] 6/100 crn-011391 source=backend
+[deepseek-coder:6.7b no_review] 7/100 crn-002686 source=backend
+[deepseek-coder:6.7b no_review] 8/100 crn-004518 source=backend
+[deepseek-coder:6.7b no_review] 9/100 crn-003358 source=backend
+[deepseek-coder:6.7b no_review] 10/100 crn-008823 source=backend
+[deepseek-coder:6.7b no_review] 11/100 crn-006784 source=backend
+[deepseek-coder:6.7b no_review] 12/100 crn-013905 source=backend
+[deepseek-coder:6.7b no_review] 13/100 crn-002938 source=backend
+[deepseek-coder:6.7b no_review] 14/100 crn-000862 source=backend
+[deepseek-coder:6.7b no_review] 15/100 crn-006421 source=backend
+[deepseek-coder:6.7b no_review] 16/100 crn-000801 source=backend
+[deepseek-coder:6.7b no_review] 17/100 crn-009395 source=backend
+[deepseek-coder:6.7b no_review] 18/100 crn-004543 source=backend
+[deepseek-coder:6.7b no_review] 19/100 crn-006291 source=backend
+[deepseek-coder:6.7b no_review] 20/100 crn-000798 source=backend
+[deepseek-coder:6.7b no_review] 21/100 crn-011089 source=backend
+[deepseek-coder:6.7b no_review] 22/100 crn-000744 source=backend
+[deepseek-coder:6.7b no_review] 23/100 crn-001241 source=backend
+[deepseek-coder:6.7b no_review] 24/100 crn-009360 source=backend
+[deepseek-coder:6.7b no_review] 25/100 crn-005359 source=backend
+[deepseek-coder:6.7b no_review] 26/100 crn-002326 source=backend
+[deepseek-coder:6.7b no_review] 27/100 crn-006510 source=backend
+[deepseek-coder:6.7b no_review] 28/100 crn-005332 source=backend
+[deepseek-coder:6.7b no_review] 29/100 crn-009549 source=backend
+[deepseek-coder:6.7b no_review] 30/100 crn-009507 source=backend
+[deepseek-coder:6.7b no_review] 31/100 crn-014335 source=backend
+[deepseek-coder:6.7b no_review] 32/100 crn-000352 source=backend
+[deepseek-coder:6.7b no_review] 33/100 crn-009965 source=backend
+[deepseek-coder:6.7b no_review] 34/100 crn-001766 source=backend
+[deepseek-coder:6.7b no_review] 35/100 crn-006094 source=backend
+[deepseek-coder:6.7b no_review] 36/100 crn-003831 source=backend
+[deepseek-coder:6.7b no_review] 37/100 crn-002447 source=backend
+[deepseek-coder:6.7b no_review] 38/100 crn-005935 source=backend
+[deepseek-coder:6.7b no_review] 39/100 crn-003340 source=backend
+[deepseek-coder:6.7b no_review] 40/100 crn-006141 source=backend
+[deepseek-coder:6.7b no_review] 41/100 crn-010983 source=backend
+[deepseek-coder:6.7b no_review] 42/100 crn-002782 source=backend
+[deepseek-coder:6.7b no_review] 43/100 crn-000938 source=backend
+[deepseek-coder:6.7b no_review] 44/100 crn-012022 source=backend
+[deepseek-coder:6.7b no_review] 45/100 crn-006672 source=backend
+[deepseek-coder:6.7b no_review] 46/100 crn-002936 source=backend
+[deepseek-coder:6.7b no_review] 47/100 crn-001592 source=backend
+[deepseek-coder:6.7b no_review] 48/100 crn-012114 source=backend
+[deepseek-coder:6.7b no_review] 49/100 crn-009143 source=backend
+[deepseek-coder:6.7b no_review] 50/100 crn-007430 source=backend
+[deepseek-coder:6.7b no_review] 51/100 crn-008317 source=backend
+[deepseek-coder:6.7b no_review] 52/100 crn-005837 source=backend
+[deepseek-coder:6.7b no_review] 53/100 crn-005987 source=backend
+[deepseek-coder:6.7b no_review] 54/100 crn-004034 source=backend
+[deepseek-coder:6.7b no_review] 55/100 crn-013498 source=backend
+[deepseek-coder:6.7b no_review] 56/100 crn-008596 source=backend
+[deepseek-coder:6.7b no_review] 57/100 crn-004704 source=backend
+[deepseek-coder:6.7b no_review] 58/100 crn-000658 source=backend
+[deepseek-coder:6.7b no_review] 59/100 crn-002953 source=backend
+[deepseek-coder:6.7b no_review] 60/100 crn-008903 source=backend
+[deepseek-coder:6.7b no_review] 61/100 crn-008014 source=backend
+[deepseek-coder:6.7b no_review] 62/100 crn-006483 source=backend
+[deepseek-coder:6.7b no_review] 63/100 crn-002912 source=backend
+[deepseek-coder:6.7b no_review] 64/100 crn-011602 source=backend
+[deepseek-coder:6.7b no_review] 65/100 crn-003000 source=backend
+[deepseek-coder:6.7b no_review] 66/100 crn-008292 source=backend
+[deepseek-coder:6.7b no_review] 67/100 crn-006652 source=backend
+[deepseek-coder:6.7b no_review] 68/100 crn-002438 source=backend
+[deepseek-coder:6.7b no_review] 69/100 crn-004798 source=backend
+[deepseek-coder:6.7b no_review] 70/100 crn-002193 source=backend
+[deepseek-coder:6.7b no_review] 71/100 crn-007113 source=backend
+[deepseek-coder:6.7b no_review] 72/100 crn-008421 source=backend
+[deepseek-coder:6.7b no_review] 73/100 crn-002947 source=backend
+[deepseek-coder:6.7b no_review] 74/100 crn-014837 source=backend
+[deepseek-coder:6.7b no_review] 75/100 crn-010330 source=backend
+[deepseek-coder:6.7b no_review] 76/100 crn-000953 source=backend
+[deepseek-coder:6.7b no_review] 77/100 crn-013469 source=backend
+[deepseek-coder:6.7b no_review] 78/100 crn-010241 source=backend
+[deepseek-coder:6.7b no_review] 79/100 crn-007789 source=backend
+[deepseek-coder:6.7b no_review] 80/100 crn-013776 source=backend
+[deepseek-coder:6.7b no_review] 81/100 crn-002553 source=backend
+[deepseek-coder:6.7b no_review] 82/100 crn-009938 source=backend
+[deepseek-coder:6.7b no_review] 83/100 crn-009318 source=backend
+[deepseek-coder:6.7b no_review] 84/100 crn-009293 source=backend
+[deepseek-coder:6.7b no_review] 85/100 crn-000654 source=backend
+[deepseek-coder:6.7b no_review] 86/100 crn-000126 source=backend
+[deepseek-coder:6.7b no_review] 87/100 crn-012856 source=backend
+[deepseek-coder:6.7b no_review] 88/100 crn-010305 source=backend
+[deepseek-coder:6.7b no_review] 89/100 crn-009519 source=backend
+[deepseek-coder:6.7b no_review] 90/100 crn-012176 source=backend
+[deepseek-coder:6.7b no_review] 91/100 crn-002868 source=backend
+[deepseek-coder:6.7b no_review] 92/100 crn-009462 source=backend
+[deepseek-coder:6.7b no_review] 93/100 crn-002916 source=backend
+[deepseek-coder:6.7b no_review] 94/100 crn-007657 source=backend
+[deepseek-coder:6.7b no_review] 95/100 crn-012852 source=backend
+[deepseek-coder:6.7b no_review] 96/100 crn-013258 source=backend
+[deepseek-coder:6.7b no_review] 97/100 crn-012033 source=backend
+[deepseek-coder:6.7b no_review] 98/100 crn-007196 source=backend
+[deepseek-coder:6.7b no_review] 99/100 crn-011907 source=backend
+[deepseek-coder:6.7b no_review] 100/100 crn-014505 source=backend
+[deepseek-coder:6.7b direct] 1/100 crn-005287 source=backend
+[deepseek-coder:6.7b direct] 2/100 crn-011737 source=backend
+[deepseek-coder:6.7b direct] 3/100 crn-002932 source=backend
+[deepseek-coder:6.7b direct] 4/100 crn-002192 source=backend
+[deepseek-coder:6.7b direct] 5/100 crn-006232 source=backend
+[deepseek-coder:6.7b direct] 6/100 crn-011391 source=backend
+[deepseek-coder:6.7b direct] 7/100 crn-002686 source=backend
+[deepseek-coder:6.7b direct] 8/100 crn-004518 source=backend
+[deepseek-coder:6.7b direct] 9/100 crn-003358 source=backend
+[deepseek-coder:6.7b direct] 10/100 crn-008823 source=backend
+[deepseek-coder:6.7b direct] 11/100 crn-006784 source=backend
+[deepseek-coder:6.7b direct] 12/100 crn-013905 source=backend
+[deepseek-coder:6.7b direct] 13/100 crn-002938 source=backend
+[deepseek-coder:6.7b direct] 14/100 crn-000862 source=backend
+[deepseek-coder:6.7b direct] 15/100 crn-006421 source=backend
+[deepseek-coder:6.7b direct] 16/100 crn-000801 source=backend
+[deepseek-coder:6.7b direct] 17/100 crn-009395 source=backend
+[deepseek-coder:6.7b direct] 18/100 crn-004543 source=backend
+[deepseek-coder:6.7b direct] 19/100 crn-006291 source=backend
+[deepseek-coder:6.7b direct] 20/100 crn-000798 source=backend
+[deepseek-coder:6.7b direct] 21/100 crn-011089 source=backend
+[deepseek-coder:6.7b direct] 22/100 crn-000744 source=backend
+[deepseek-coder:6.7b direct] 23/100 crn-001241 source=backend
+[deepseek-coder:6.7b direct] 24/100 crn-009360 source=backend
+[deepseek-coder:6.7b direct] 25/100 crn-005359 source=backend
+[deepseek-coder:6.7b direct] 26/100 crn-002326 source=backend
+[deepseek-coder:6.7b direct] 27/100 crn-006510 source=backend
+[deepseek-coder:6.7b direct] 28/100 crn-005332 source=backend
+[deepseek-coder:6.7b direct] 29/100 crn-009549 source=backend
+[deepseek-coder:6.7b direct] 30/100 crn-009507 source=backend
+[deepseek-coder:6.7b direct] 31/100 crn-014335 source=backend
+[deepseek-coder:6.7b direct] 32/100 crn-000352 source=backend
+[deepseek-coder:6.7b direct] 33/100 crn-009965 source=backend
+[deepseek-coder:6.7b direct] 34/100 crn-001766 source=backend
+[deepseek-coder:6.7b direct] 35/100 crn-006094 source=backend
+[deepseek-coder:6.7b direct] 36/100 crn-003831 source=backend
+[deepseek-coder:6.7b direct] 37/100 crn-002447 source=backend
+[deepseek-coder:6.7b direct] 38/100 crn-005935 source=backend
+[deepseek-coder:6.7b direct] 39/100 crn-003340 source=backend
+[deepseek-coder:6.7b direct] 40/100 crn-006141 source=backend
+[deepseek-coder:6.7b direct] 41/100 crn-010983 source=backend
+[deepseek-coder:6.7b direct] 42/100 crn-002782 source=backend
+[deepseek-coder:6.7b direct] 43/100 crn-000938 source=backend
+[deepseek-coder:6.7b direct] 44/100 crn-012022 source=backend
+[deepseek-coder:6.7b direct] 45/100 crn-006672 source=backend
+[deepseek-coder:6.7b direct] 46/100 crn-002936 source=backend
+[deepseek-coder:6.7b direct] 47/100 crn-001592 source=backend
+[deepseek-coder:6.7b direct] 48/100 crn-012114 source=backend
+[deepseek-coder:6.7b direct] 49/100 crn-009143 source=backend
+[deepseek-coder:6.7b direct] 50/100 crn-007430 source=backend
+[deepseek-coder:6.7b direct] 51/100 crn-008317 source=backend
+[deepseek-coder:6.7b direct] 52/100 crn-005837 source=backend
+[deepseek-coder:6.7b direct] 53/100 crn-005987 source=backend
+[deepseek-coder:6.7b direct] 54/100 crn-004034 source=backend
+[deepseek-coder:6.7b direct] 55/100 crn-013498 source=backend
+[deepseek-coder:6.7b direct] 56/100 crn-008596 source=backend
+[deepseek-coder:6.7b direct] 57/100 crn-004704 source=backend
+[deepseek-coder:6.7b direct] 58/100 crn-000658 source=backend
+[deepseek-coder:6.7b direct] 59/100 crn-002953 source=backend
+[deepseek-coder:6.7b direct] 60/100 crn-008903 source=backend
+[deepseek-coder:6.7b direct] 61/100 crn-008014 source=backend
+[deepseek-coder:6.7b direct] 62/100 crn-006483 source=backend
+[deepseek-coder:6.7b direct] 63/100 crn-002912 source=backend
+[deepseek-coder:6.7b direct] 64/100 crn-011602 source=backend
+[deepseek-coder:6.7b direct] 65/100 crn-003000 source=backend

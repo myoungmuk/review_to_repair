@@ -1,0 +1,5 @@
+model,no_review_exact,direct_exact,gold_location_exact,no_review_loc_f1,direct_loc_f1,gold_location_loc_f1,direct_minus_no_review_exact,direct_minus_no_review_loc_f1,gold_location_minus_direct_exact,gold_location_minus_direct_loc_f1
+qwen2.5-coder:7b,0.0,0.0,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0.0,0.0
+deepseek-coder:6.7b,0.0,0.0,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0.0,0.0
+codegemma:7b,0.0,0.0,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0.0,0.0
+macro_average,0.0,0.0,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0.0,0.0
